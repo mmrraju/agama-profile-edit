@@ -15,6 +15,9 @@
             "authorization"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {
+            "org.gluu.agama.profile.edit": {}
+        },
+        "name": "agama-profile-edit"
     }
 }
