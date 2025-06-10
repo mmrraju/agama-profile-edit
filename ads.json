@@ -1,1 +1,20 @@
-{}
+{
+    "agama-profile-edit": {
+        "projectName": "agama-profile-edit",
+        "description": "Agama flow to let users update profile claims",
+        "type": "community",
+        "author": "mmrraju",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/mmrraju/agama-profile-edit",
+        "githubUri": "https://github.com/mmrraju/agama-profile-edit",
+        "license": "apache-2.0",
+        "lastUpdated": "1749588168026",
+        "tags": [
+            "jans",
+            "community",
+            "authorization"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
+    }
+}
