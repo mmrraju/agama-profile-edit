@@ -1,2 +1,4 @@
 Flow org.gluu.agama.profile.edit
      Basepath ""
+// Profile edit flow starting
+Log "@info Profile edit flow starting..."
