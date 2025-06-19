@@ -9,3 +9,5 @@ emailObj = {}
 Repeat 6 times max
      // Retrieve user mail  from UI
      RRF "mail.ftlh" emailObj
+// Maximum attempt reached
+Log "@info Maximum attempt reached"
