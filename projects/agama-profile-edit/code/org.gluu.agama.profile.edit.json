@@ -166,21 +166,23 @@
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
 					"templatePath": "mail.ftlh",
-					"asssignedVariableName": "",
+					"asssignedVariableName": "userInput",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
 					"comment": "Retrieve user mail  from UI",
-					"arguments": "emailObj"
+					"arguments": [
+						"emailObj"
+					]
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "logNode-7f44527e-5cba-4a7b-980c-4366d46d29c9",
@@ -214,7 +216,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -315,8 +317,8 @@
 		}
 	],
 	"viewport": {
-		"x": -785.4108446375317,
-		"y": 181.42106840701604,
-		"zoom": 0.9999999999999998
+		"x": -542,
+		"y": 62,
+		"zoom": 1
 	}
 }
