@@ -43,6 +43,9 @@ Repeat 6 times max
                          When validation.valid is true
                               // Update user profile
                               updateProfile = Call userProfileUpdateService updateProfile userProfiles
+                         Otherwise
+                              // Validate message
+                              profileUpdateFeedback.errorMessage = validation.message
                Otherwise
                     // OTP doesn't match
                     otpFormFeedback.errorMessage = "OTP doesn't match"
