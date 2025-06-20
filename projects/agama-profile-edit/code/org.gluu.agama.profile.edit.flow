@@ -10,6 +10,6 @@ Repeat 6 times max
      // Retrieve user mail  from UI
      userInput = RRF "mail.ftlh" emailObj
      // create an instance of user profile update service
-     userProfileUpdateService = Call org.gluu.agama.jans.UserProfileUpdate#new 
+     userProfileUpdateService = Call org.gluu.agama.jans.UserProfileUpdate#getInstance 
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
