@@ -375,7 +375,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-d0a452b6-8f69-4a2f-bd9b-db999db78b4f",
@@ -410,6 +410,46 @@
 				"height": 124
 			},
 			"selected": false
+		},
+		{
+			"id": "callNode-3629f32f-56da-431d-94f2-3b6a67fa12ef",
+			"type": "callNode",
+			"position": {
+				"x": 2280,
+				"y": 480
+			},
+			"data": {
+				"id": "callNode-3629f32f-56da-431d-94f2-3b6a67fa12ef",
+				"type": "callNode",
+				"position": {
+					"x": 2280,
+					"y": 480
+				},
+				"previousNodeId": "logNode-d0a452b6-8f69-4a2f-bd9b-db999db78b4f",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "sendMail",
+					"javaVariableName": "userProfileUpdateService",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"arguments": [
+						"userInput.mail"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "OTP to verify user",
+					"asssignedVariableName": "otp"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -602,11 +642,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-9d33dc21-e01f-43e3-8a6e-0ae42d5130cd_success"
+		},
+		{
+			"id": "logNode-d0a452b6-8f69-4a2f-bd9b-db999db78b4f-callNode-3629f32f-56da-431d-94f2-3b6a67fa12ef",
+			"type": "default",
+			"source": "logNode-d0a452b6-8f69-4a2f-bd9b-db999db78b4f",
+			"target": "callNode-3629f32f-56da-431d-94f2-3b6a67fa12ef",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-d0a452b6-8f69-4a2f-bd9b-db999db78b4f"
 		}
 	],
 	"viewport": {
-		"x": -1438,
-		"y": 59,
+		"x": -1651,
+		"y": 5,
 		"zoom": 1
 	}
 }
