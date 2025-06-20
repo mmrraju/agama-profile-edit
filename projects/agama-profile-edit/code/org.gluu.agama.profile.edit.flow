@@ -39,6 +39,10 @@ Repeat 6 times max
                          validation = Call userProfileUpdateService validateInputs userProfiles
                          // Validation result log
                          Log "@info Validation result:  % , % , %" validation validation.valid validation.message
+                         // If successfully validate
+                         When validation.valid is true
+                              // Update user profile
+                              updateProfile = Call userProfileUpdateService updateProfile userProfiles
                Otherwise
                     // OTP doesn't match
                     otpFormFeedback.errorMessage = "OTP doesn't match"
