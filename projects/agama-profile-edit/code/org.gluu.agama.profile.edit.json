@@ -936,6 +936,46 @@
 				"width": 170,
 				"height": 124
 			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "assignmentNode-a2b0d8b7-09ab-478c-9117-a5728c812d2f",
+			"type": "assignmentNode",
+			"position": {
+				"x": 5279,
+				"y": 931
+			},
+			"data": {
+				"id": "assignmentNode-a2b0d8b7-09ab-478c-9117-a5728c812d2f",
+				"type": "assignmentNode",
+				"position": {
+					"x": 5279,
+					"y": 931
+				},
+				"previousNodeId": "whenNode-04406ba9-daae-48f7-b257-16fb61ce4b8e",
+				"branching": "otherwise",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "validation.message",
+							"assignedVariableName": "profileUpdateFeedback.errorMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Validate message"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
 			"selected": true,
 			"dragging": false
 		}
@@ -1396,11 +1436,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-04406ba9-daae-48f7-b257-16fb61ce4b8e_success"
+		},
+		{
+			"id": "whenNode-04406ba9-daae-48f7-b257-16fb61ce4b8e-assignmentNode-a2b0d8b7-09ab-478c-9117-a5728c812d2f",
+			"type": "default",
+			"source": "whenNode-04406ba9-daae-48f7-b257-16fb61ce4b8e",
+			"target": "assignmentNode-a2b0d8b7-09ab-478c-9117-a5728c812d2f",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "otherwise",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-04406ba9-daae-48f7-b257-16fb61ce4b8e_otherwise"
 		}
 	],
 	"viewport": {
-		"x": -4850,
-		"y": -934,
+		"x": -4810,
+		"y": -849,
 		"zoom": 1
 	}
 }
