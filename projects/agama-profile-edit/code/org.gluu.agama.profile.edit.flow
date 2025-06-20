@@ -11,5 +11,7 @@ Repeat 6 times max
      userInput = RRF "mail.ftlh" emailObj
      // create an instance of user profile update service
      userProfileUpdateService = Call org.gluu.agama.jans.UserProfileUpdate#getInstance 
+     // Check user already exist or not with mail
+     user | E = Call userProfileUpdateService getUserEntity userInput.mail
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
