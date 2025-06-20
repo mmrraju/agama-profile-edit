@@ -182,7 +182,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-7f44527e-5cba-4a7b-980c-4366d46d29c9",
@@ -217,6 +217,44 @@
 				"height": 124
 			},
 			"selected": false
+		},
+		{
+			"id": "callNode-dbba924f-fc79-4a52-b22a-4ea63bdd8a49",
+			"type": "callNode",
+			"position": {
+				"x": 1280,
+				"y": 280
+			},
+			"data": {
+				"id": "callNode-dbba924f-fc79-4a52-b22a-4ea63bdd8a49",
+				"type": "callNode",
+				"position": {
+					"x": 1280,
+					"y": 280
+				},
+				"previousNodeId": "rrfNode-c99ad702-0109-4a85-9332-a7b64ba8c051",
+				"agamaData": {
+					"javaClassName": "org.gluu.agama.jans.UserProfileUpdate",
+					"javaMethodName": "",
+					"javaVariableName": "",
+					"exceptionVariableField": "",
+					"callType": "Create an instance",
+					"arguments": [],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "create an instance of user profile update service",
+					"asssignedVariableName": "userProfileUpdateService"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -314,6 +352,25 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_repeatNode-a9668e20-8e81-4458-b76f-32ad43866aef_continue"
+		},
+		{
+			"id": "rrfNode-c99ad702-0109-4a85-9332-a7b64ba8c051-callNode-dbba924f-fc79-4a52-b22a-4ea63bdd8a49",
+			"type": "default",
+			"source": "rrfNode-c99ad702-0109-4a85-9332-a7b64ba8c051",
+			"target": "callNode-dbba924f-fc79-4a52-b22a-4ea63bdd8a49",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_rrfNode-c99ad702-0109-4a85-9332-a7b64ba8c051"
 		}
 	],
 	"viewport": {
