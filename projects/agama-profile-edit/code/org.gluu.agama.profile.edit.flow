@@ -31,6 +31,8 @@ Repeat 6 times max
                     Log "@info OTP matches"
                     // Profile Update Feedback
                     profileUpdateFeedback = {}
+                    // Max 3 times repeat
+                    Repeat 3 times max
                Otherwise
                     // OTP doesn't match
                     otpFormFeedback.errorMessage = "OTP doesn't match"
