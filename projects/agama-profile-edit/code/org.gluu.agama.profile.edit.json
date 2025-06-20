@@ -254,6 +254,46 @@
 				"width": 170,
 				"height": 124
 			},
+			"selected": false
+		},
+		{
+			"id": "callNode-78117200-24f6-4da6-bc18-f42447f0656f",
+			"type": "callNode",
+			"position": {
+				"x": 1530,
+				"y": 280
+			},
+			"data": {
+				"id": "callNode-78117200-24f6-4da6-bc18-f42447f0656f",
+				"type": "callNode",
+				"position": {
+					"x": 1530,
+					"y": 280
+				},
+				"previousNodeId": "callNode-dbba924f-fc79-4a52-b22a-4ea63bdd8a49",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "getUserEntity",
+					"javaVariableName": "userProfileUpdateService",
+					"exceptionVariableField": "E",
+					"callType": "Call method on instance",
+					"arguments": [
+						"userInput.mail"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Check user already exist or not with mail",
+					"asssignedVariableName": "user"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
 			"selected": true
 		}
 	],
@@ -371,11 +411,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_rrfNode-c99ad702-0109-4a85-9332-a7b64ba8c051"
+		},
+		{
+			"id": "callNode-dbba924f-fc79-4a52-b22a-4ea63bdd8a49-callNode-78117200-24f6-4da6-bc18-f42447f0656f",
+			"type": "default",
+			"source": "callNode-dbba924f-fc79-4a52-b22a-4ea63bdd8a49",
+			"target": "callNode-78117200-24f6-4da6-bc18-f42447f0656f",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-dbba924f-fc79-4a52-b22a-4ea63bdd8a49"
 		}
 	],
 	"viewport": {
-		"x": -542,
-		"y": 62,
+		"x": -1310,
+		"y": -26,
 		"zoom": 1
 	}
 }
