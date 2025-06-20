@@ -375,6 +375,40 @@
 				"width": 170,
 				"height": 124
 			},
+			"selected": false
+		},
+		{
+			"id": "logNode-d0a452b6-8f69-4a2f-bd9b-db999db78b4f",
+			"type": "logNode",
+			"position": {
+				"x": 2030,
+				"y": 480
+			},
+			"data": {
+				"id": "logNode-d0a452b6-8f69-4a2f-bd9b-db999db78b4f",
+				"type": "logNode",
+				"position": {
+					"x": 2030,
+					"y": 480
+				},
+				"previousNodeId": "whenNode-9d33dc21-e01f-43e3-8a6e-0ae42d5130cd",
+				"branching": "success",
+				"agamaData": {
+					"logMessage": "\"User found with e-mail % \" mailForm.mail",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "User found with e-mail"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
 			"selected": true
 		}
 	],
@@ -549,6 +583,25 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-9d33dc21-e01f-43e3-8a6e-0ae42d5130cd_otherwise"
+		},
+		{
+			"id": "whenNode-9d33dc21-e01f-43e3-8a6e-0ae42d5130cd-logNode-d0a452b6-8f69-4a2f-bd9b-db999db78b4f",
+			"type": "default",
+			"source": "whenNode-9d33dc21-e01f-43e3-8a6e-0ae42d5130cd",
+			"target": "logNode-d0a452b6-8f69-4a2f-bd9b-db999db78b4f",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "Condition met",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-9d33dc21-e01f-43e3-8a6e-0ae42d5130cd_success"
 		}
 	],
 	"viewport": {
