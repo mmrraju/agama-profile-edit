@@ -45,6 +45,9 @@ Repeat 6 times max
                               updateProfile = Call userProfileUpdateService updateProfile userProfiles
                               // Profile update successful
                               Log "@info Profile update successfully"
+                              // Finish successfully
+                              it_relgh = {success:true, data: { userId: user.inum}}
+                              Finish it_relgh
                          Otherwise
                               // Validate message
                               profileUpdateFeedback.errorMessage = validation.message
