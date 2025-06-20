@@ -19,6 +19,6 @@ Repeat 6 times max
           Log "@info User found with e-mail % " mailForm.mail
      Otherwise
           // User not found
-          mailObj.errorMessage = "User not found"
+          emailObj.errorMessage = "User not found"
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
