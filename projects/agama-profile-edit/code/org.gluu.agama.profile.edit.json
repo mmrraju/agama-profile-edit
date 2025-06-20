@@ -235,10 +235,10 @@
 				"previousNodeId": "rrfNode-c99ad702-0109-4a85-9332-a7b64ba8c051",
 				"agamaData": {
 					"javaClassName": "org.gluu.agama.jans.UserProfileUpdate",
-					"javaMethodName": "",
+					"javaMethodName": "getInstance",
 					"javaVariableName": "",
 					"exceptionVariableField": "",
-					"callType": "Create an instance",
+					"callType": "Call static method",
 					"arguments": [],
 					"nodeIcon": "material-symbols:code",
 					"nodeColor": "",
