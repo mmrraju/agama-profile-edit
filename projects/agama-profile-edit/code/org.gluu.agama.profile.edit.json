@@ -359,7 +359,7 @@
 						{
 							"variableTypeCheck": true,
 							"assignmentExpression": "\"User not found\"",
-							"assignedVariableName": "mailObj.errorMessage"
+							"assignedVariableName": "emailObj.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -375,7 +375,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "logNode-d0a452b6-8f69-4a2f-bd9b-db999db78b4f",
@@ -409,7 +409,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
