@@ -13,5 +13,10 @@ Repeat 6 times max
      userProfileUpdateService = Call org.gluu.agama.jans.UserProfileUpdate#getInstance 
      // Check user already exist or not with mail
      user | E = Call userProfileUpdateService getUserEntity userInput.mail
+     // If user found
+     When user.empty is not true
+     Otherwise
+          // User not found
+          mailObj.errorMessage = "User not found"
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
