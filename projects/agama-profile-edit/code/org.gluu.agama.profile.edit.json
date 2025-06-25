@@ -234,7 +234,7 @@
 				},
 				"previousNodeId": "rrfNode-c99ad702-0109-4a85-9332-a7b64ba8c051",
 				"agamaData": {
-					"javaClassName": "org.gluu.agama.jans.UserProfileUpdate",
+					"javaClassName": "org.gluu.agama.jans.service.UserProfileEdit",
 					"javaMethodName": "getInstance",
 					"javaVariableName": "",
 					"exceptionVariableField": "",
@@ -247,14 +247,14 @@
 					"displayName": "",
 					"hasComment": true,
 					"comment": "create an instance of user profile update service",
-					"asssignedVariableName": "userProfileUpdateService"
+					"asssignedVariableName": "userProfileEditService"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "callNode-78117200-24f6-4da6-bc18-f42447f0656f",
@@ -1044,7 +1044,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -1563,8 +1563,8 @@
 		}
 	],
 	"viewport": {
-		"x": -4469.92373045049,
-		"y": -751.1102794830779,
-		"zoom": 0.8467453123625271
+		"x": -699.4707609765577,
+		"y": -4.123203206025437,
+		"zoom": 0.870550563296124
 	}
 }
