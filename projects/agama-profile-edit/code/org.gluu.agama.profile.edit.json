@@ -254,7 +254,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "callNode-78117200-24f6-4da6-bc18-f42447f0656f",
@@ -274,7 +274,7 @@
 				"agamaData": {
 					"javaClassName": "",
 					"javaMethodName": "getUserEntity",
-					"javaVariableName": "userProfileUpdateService",
+					"javaVariableName": "userProfileEditService",
 					"exceptionVariableField": "E",
 					"callType": "Call method on instance",
 					"arguments": [
@@ -294,7 +294,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "whenNode-9d33dc21-e01f-43e3-8a6e-0ae42d5130cd",
@@ -1563,8 +1563,8 @@
 		}
 	],
 	"viewport": {
-		"x": -699.4707609765577,
-		"y": -4.123203206025437,
+		"x": -975.4707609765578,
+		"y": -26.123203206025437,
 		"zoom": 0.870550563296124
 	}
 }
