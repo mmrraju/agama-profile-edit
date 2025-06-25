@@ -18,7 +18,7 @@ Repeat 6 times max
           // User found with e-mail
           Log "@info User found with e-mail % " mailForm.mail
           // OTP to verify user
-          otp = Call userProfileUpdateService sendMail userInput.mail
+          otp = Call userProfileEditService sendMail userInput.mail
           // OTP form feedback
           otpFormFeedback = {}
           // Max 3 times repeat
@@ -46,8 +46,8 @@ Repeat 6 times max
                               // Profile update successful
                               Log "@info Profile update successfully"
                               // Finish successfully
-                              it_wkzpa = {success:true, data: { userId: user.inum}}
-                              Finish it_wkzpa
+                              it_gnshx = {success:true, data: { userId: user.inum}}
+                              Finish it_gnshx
                          Otherwise
                               // Validate message
                               profileUpdateFeedback.errorMessage = validation.message
