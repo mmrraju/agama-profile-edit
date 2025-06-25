@@ -294,7 +294,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "whenNode-9d33dc21-e01f-43e3-8a6e-0ae42d5130cd",
@@ -429,7 +429,7 @@
 				"agamaData": {
 					"javaClassName": "",
 					"javaMethodName": "sendMail",
-					"javaVariableName": "userProfileUpdateService",
+					"javaVariableName": "userProfileEditService",
 					"exceptionVariableField": "",
 					"callType": "Call method on instance",
 					"arguments": [
@@ -449,7 +449,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-df615393-d422-43ed-8c3a-b120f41ddbae",
@@ -1563,8 +1563,8 @@
 		}
 	],
 	"viewport": {
-		"x": -975.4707609765578,
-		"y": -26.123203206025437,
+		"x": -1571.4707609765574,
+		"y": -184.12320320602544,
 		"zoom": 0.870550563296124
 	}
 }
