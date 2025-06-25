@@ -42,12 +42,12 @@ Repeat 6 times max
                          // If successfully validate
                          When validation.valid is true
                               // Update user profile
-                              updateProfile = Call userProfileUpdateService updateProfile userProfiles
+                              updateProfile = Call userProfileEditService updateProfile userProfiles
                               // Profile update successful
                               Log "@info Profile update successfully"
                               // Finish successfully
-                              it_xhhqo = {success:true, data: { userId: user.inum}}
-                              Finish it_xhhqo
+                              it_zokei = {success:true, data: { userId: user.inum}}
+                              Finish it_zokei
                          Otherwise
                               // Validate message
                               profileUpdateFeedback.errorMessage = validation.message
