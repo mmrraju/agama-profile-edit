@@ -36,7 +36,7 @@ Repeat 6 times max
                          // Profile update form
                          userProfiles = RRF "profile.ftlh" profileUpdateFeedback
                          // Validate user profile inputs
-                         validation = Call userProfileUpdateService validateInputs userProfiles
+                         validation = Call userProfileEditService validateInputs userProfiles
                          // Validation result log
                          Log "@info Validation result:  % , % , %" validation validation.valid validation.message
                          // If successfully validate
@@ -46,8 +46,8 @@ Repeat 6 times max
                               // Profile update successful
                               Log "@info Profile update successfully"
                               // Finish successfully
-                              it_gnshx = {success:true, data: { userId: user.inum}}
-                              Finish it_gnshx
+                              it_xhhqo = {success:true, data: { userId: user.inum}}
+                              Finish it_xhhqo
                          Otherwise
                               // Validate message
                               profileUpdateFeedback.errorMessage = validation.message
