@@ -234,7 +234,7 @@
 				},
 				"previousNodeId": "rrfNode-c99ad702-0109-4a85-9332-a7b64ba8c051",
 				"agamaData": {
-					"javaClassName": "org.gluu.agama.jans.service.UserProfileEdit",
+					"javaClassName": "org.gluu.agama.profile.service.UserProfileEditService",
 					"javaMethodName": "getInstance",
 					"javaVariableName": "",
 					"exceptionVariableField": "",
@@ -254,7 +254,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "callNode-78117200-24f6-4da6-bc18-f42447f0656f",
@@ -936,7 +936,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1563,8 +1563,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3950.4707609765574,
-		"y": -793.1232032060252,
-		"zoom": 0.870550563296124
+		"x": -618,
+		"y": -72,
+		"zoom": 1
 	}
 }
