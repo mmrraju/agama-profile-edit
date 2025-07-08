@@ -165,7 +165,7 @@
 				"agamaData": {
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
-					"templatePath": "mail.ftlh",
+					"templatePath": "mailform.ftlh",
 					"asssignedVariableName": "userInput",
 					"nodeColor": "",
 					"titleColor": "",
@@ -182,7 +182,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "logNode-7f44527e-5cba-4a7b-980c-4366d46d29c9",
@@ -254,7 +254,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "callNode-78117200-24f6-4da6-bc18-f42447f0656f",
@@ -1563,8 +1563,8 @@
 		}
 	],
 	"viewport": {
-		"x": -618,
-		"y": -72,
-		"zoom": 1
+		"x": -362.99570613924345,
+		"y": 176.8592822970852,
+		"zoom": 0.9999999999999996
 	}
 }
