@@ -8,7 +8,7 @@ emailObj = {}
 // Iterate x times max
 Repeat 6 times max
      // Retrieve user mail  from UI
-     userInput = RRF "mail.ftlh" emailObj
+     userInput = RRF "mailform.ftlh" emailObj
      // create an instance of user profile update service
      userProfileEditService = Call org.gluu.agama.profile.service.UserProfileEditService#getInstance 
      // Check user already exist or not with mail
@@ -46,8 +46,8 @@ Repeat 6 times max
                               // Profile update successful
                               Log "@info Profile update successfully"
                               // Finish successfully
-                              it_sllhy = {success:true, data: { userId: user.inum}}
-                              Finish it_sllhy
+                              it_xamjs = {success:true, data: { userId: user.inum}}
+                              Finish it_xamjs
                          Otherwise
                               // Validate message
                               profileUpdateFeedback.errorMessage = validation.message
