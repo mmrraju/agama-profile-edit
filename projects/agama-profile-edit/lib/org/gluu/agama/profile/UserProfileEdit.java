@@ -23,6 +23,7 @@ import org.gluu.agama.profile.service.UserProfileEditService;
 
 public class UserProfileEdit extends UserProfileEditService{
 
+    private static final String COUNTRY = "country";
     private static final String SN = "sn";
     private static final String CONFIRM_PASSWORD = "confirmPassword";
     private static final String MAIL = "mail";
@@ -103,41 +104,21 @@ public class UserProfileEdit extends UserProfileEditService{
         LogUtils.log("Validate inputs ");
         Map<String, Object> result = new HashMap<>();
 
-        if (profile.get(UID)== null || !Pattern.matches('''^[A-Za-z][A-Za-z0-9]{5,19}$''', profile.get(UID))) {
+        if (StringHelper.isNotEmpty(profile.get(SN))) {
             result.put("valid", false);
-            result.put("message", "Invalid username. Must be 6-20 characters, start with a letter, and contain only letters, digits");
+            result.put("message", "Sure name not provided");
             return result;
         }
-        // if (profile.get(PASSWORD)==null || !Pattern.matches('''^(?=.*[A-Za-z])(?=.*\\d)(?=.*[!"#$%&'()*+,-./:;<=>?@[\\\\]^_`{|}~])[!-~&&[^ ]]{12,24}$''', profile.get(PASSWORD))) {
-        //     result.put("valid", false);
-        //     result.put("message", "Invalid password. Must be at least 12 to 24 characters with uppercase, lowercase, digit, and special character.");
-        //     return result;
-        // }
-
-        if (profile.get(LANG) == null || !Pattern.matches('''^(ar|en|es|fr|pt|id)$''', profile.get(LANG))) {
+        if (StringHelper.isNotEmpty(profile.get(GIVEN_NAME))) {
             result.put("valid", false);
-            result.put("message", "Invalid language code. Must be one of ar, en, es, fr, pt, or id.");
+            result.put("message", "Given name not provided");
             return result;
         }
-
-        if (profile.get(REFERRAL_CODE) == null || !Pattern.matches('''^[A-Z0-9]{1,16}$''', profile.get(REFERRAL_CODE))) {
+        if (StringHelper.isNotEmpty(profile.get(DISPLAY_NAME))) {
             result.put("valid", false);
-            result.put("message", "Invalid referral code. Must be uppercase alphanumeric and 1-16 characters.");
+            result.put("message", "Display name not provided");
             return result;
-        }
-
-        if (profile.get(RESIDENCE_COUNTRY) == null || !Pattern.matches('''^[A-Z]{2}$''', profile.get(RESIDENCE_COUNTRY))) {
-            result.put("valid", false);
-            result.put("message", "Invalid residence country. Must be exactly two uppercase letters.");
-            return result;
-        }
-
-        if (!profile.get(PASSWORD).equals(profile.get(CONFIRM_PASSWORD))) {
-            result.put("valid", false);
-            result.put("message", "Password and confirm password do not match");
-            return result;
-        }
-
+        }        
         result.put("valid", true);
         result.put("message", "All inputs are valid.");
         return result;
@@ -148,9 +129,12 @@ public class UserProfileEdit extends UserProfileEditService{
 
         Set<String> attributes = new HashSet<>(Arrays.asList(SN, DISPLAY_NAME, GIVEN_NAME));
         User user = getUser(MAIL, mail);
-
-        user.setAttribute("userPassword", userPassword);
-
+        attributes.forEach(attr -> {
+            String val = profile.get(attr);
+            if (StringHelper.isNotEmpty(val)) {
+                user.setAttribute(attr, val);
+            }
+        });
         UserService userService = CdiUtil.bean(UserService.class);
         user = userService.updateUser(user);
     
