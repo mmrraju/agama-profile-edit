@@ -1,7 +1,7 @@
 [#ftl output_format="HTML"]
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>User Registration
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>User profile update
 	</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></head>
 <body>
 
@@ -18,7 +18,7 @@
 	  </div>
 	  <div class="header">
 		<i class="fas fa-user-plus">
-		</i> User Registration
+		</i> User profile update
 	  </div>
 	  <!-- Error Message Block -->
 	  [#if errorMessage?has_content]
@@ -28,7 +28,7 @@
 	  </div>
 	  [/#if]
 	  <div class="content">
-		<p class="text-center">To create an account, please enter your details below.
+		<p class="text-center">To update your profile, please enter your details below.
 		</p>
 		<form method="post" enctype="application/x-www-form-urlencoded" id="registerForm">
 		  <div class="form-group">
