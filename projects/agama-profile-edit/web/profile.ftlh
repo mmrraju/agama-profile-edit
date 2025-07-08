@@ -43,20 +43,6 @@
 			<label class="form-label">Last Name: <span class="required">*</span></label>
 			<input type="text" id="sn" name="sn" required="" placeholder="Enter your last name" class="form-control">
 		  </div>
-		  <div class="form-group">
-			<label class="form-label">Email: <span class="required">*</span></label>
-			<input type="email" id="mail" name="mail" required="" placeholder="Enter your email" class="form-control">
-		  </div>
-		  <div class="form-group">
-			<label class="form-label">Password: <span class="required">*</span></label>
-			<input type="password" id="userPassword" name="userPassword" minlength="6" pattern="^(?=.*[!@#$%^&amp;*])(?=.*[A-Za-z0-9]).{6,}$" required="" placeholder="Choose a strong password" title="Password must be at least 6 characters long and contain at least one special character (!@#$%^&amp;*)" class="form-control">
-		  </div>
-		  <div class="form-group">
-			<label class="form-label">Repeat Password: <span class="required">*</span></label>
-			<input type="password" id="confirmPassword" name="confirmPassword" required="" placeholder="Confirm your password" class="form-control">
-			<div id="error-message" class="error-message">
-			</div>
-		  </div>
 		  <div class="buttons">
 			<button type="submit" class="btn btn-primary">Update</button>
 			<button type="reset" id="cancel" name="cancel" value="cancel" class="btn btn-primary">Reset</button>
