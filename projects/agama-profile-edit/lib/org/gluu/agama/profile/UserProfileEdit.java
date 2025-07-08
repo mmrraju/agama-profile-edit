@@ -106,7 +106,7 @@ public class UserProfileEdit extends UserProfileEditService{
 
         if (StringHelper.isNotEmpty(profile.get(SN))) {
             result.put("valid", false);
-            result.put("message", "Sure name not provided");
+            result.put("message", "Last name not provided");
             return result;
         }
         if (StringHelper.isNotEmpty(profile.get(GIVEN_NAME))) {
