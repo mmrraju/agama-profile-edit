@@ -48,8 +48,8 @@ public class UserProfileEdit extends UserProfileEditService{
     }
 
     @Override
-    public Map<String, String> getUserEntity(String mail) {
-        User user = getUser(MAIL, mail);
+    public Map<String, String> getUserEntity(String email) {
+        User user = getUser(MAIL, email);
         boolean local = user != null;
         LogUtils.log("There is % local account for %", local ? "a" : "no", email);
     
@@ -125,10 +125,10 @@ public class UserProfileEdit extends UserProfileEditService{
     }
 
     @Override
-    public String updateProfile(Map<String, String> profile, String mail) {
+    public String updateProfile(Map<String, String> profile, String email) {
 
         Set<String> attributes = new HashSet<>(Arrays.asList(SN, DISPLAY_NAME, GIVEN_NAME));
-        User user = getUser(MAIL, mail);
+        User user = getUser(MAIL, email);
         attributes.forEach(attr -> {
             String val = profile.get(attr);
             if (StringHelper.isNotEmpty(val)) {
