@@ -182,7 +182,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-7f44527e-5cba-4a7b-980c-4366d46d29c9",
@@ -275,7 +275,7 @@
 					"javaClassName": "",
 					"javaMethodName": "getUserEntity",
 					"javaVariableName": "userProfileEditService",
-					"exceptionVariableField": "E",
+					"exceptionVariableField": "",
 					"callType": "Call method on instance",
 					"arguments": [
 						"userInput.mail"
@@ -294,7 +294,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "whenNode-9d33dc21-e01f-43e3-8a6e-0ae42d5130cd",
@@ -1563,8 +1563,8 @@
 		}
 	],
 	"viewport": {
-		"x": -362.99570613924345,
-		"y": 176.8592822970852,
-		"zoom": 0.9999999999999996
+		"x": -1032,
+		"y": -211,
+		"zoom": 1
 	}
 }
