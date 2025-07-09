@@ -46,8 +46,8 @@ Repeat 6 times max
                               // Profile update successful
                               Log "@info Profile update successfully"
                               // Finish successfully
-                              it_aveyj = {success:true, data: { userId: user.inum}}
-                              Finish it_aveyj
+                              it_bgref = {success:true, data: { userId: user.inum}}
+                              Finish it_bgref
                          Otherwise
                               // Validate message
                               profileUpdateFeedback.errorMessage = validation.message
