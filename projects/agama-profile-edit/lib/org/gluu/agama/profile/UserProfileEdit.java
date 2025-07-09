@@ -104,17 +104,17 @@ public class UserProfileEdit extends UserProfileEditService{
         LogUtils.log("Validate inputs ");
         Map<String, Object> result = new HashMap<>();
 
-        if (StringHelper.isNotEmpty(profile.get(SN))) {
+        if (StringHelper.isEmpty(profile.get(SN))) {
             result.put("valid", false);
             result.put("message", "Last name not provided");
             return result;
         }
-        if (StringHelper.isNotEmpty(profile.get(GIVEN_NAME))) {
+        if (StringHelper.isEmpty(profile.get(GIVEN_NAME))) {
             result.put("valid", false);
             result.put("message", "Given name not provided");
             return result;
         }
-        if (StringHelper.isNotEmpty(profile.get(DISPLAY_NAME))) {
+        if (StringHelper.isEmpty(profile.get(DISPLAY_NAME))) {
             result.put("valid", false);
             result.put("message", "Display name not provided");
             return result;
