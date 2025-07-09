@@ -103,12 +103,6 @@ public class UserProfileEdit extends UserProfileEditService{
     public Map<String, Object> validateInputs(Map<String, String> profile) {
         LogUtils.log("Validate inputs ");
         Map<String, Object> result = new HashMap<>();
-
-        if (StringHelper.isEmpty(profile.get(SN))) {
-            result.put("valid", false);
-            result.put("message", "Last name not provided");
-            return result;
-        }
         if (StringHelper.isEmpty(profile.get(GIVEN_NAME))) {
             result.put("valid", false);
             result.put("message", "Given name not provided");
@@ -118,7 +112,13 @@ public class UserProfileEdit extends UserProfileEditService{
             result.put("valid", false);
             result.put("message", "Display name not provided");
             return result;
-        }        
+        }  
+        if (StringHelper.isEmpty(profile.get(SN))) {
+            result.put("valid", false);
+            result.put("message", "Last name not provided");
+            return result;
+        }
+      
         result.put("valid", true);
         result.put("message", "All inputs are valid.");
         return result;
