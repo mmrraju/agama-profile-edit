@@ -394,7 +394,7 @@
 				"previousNodeId": "whenNode-9d33dc21-e01f-43e3-8a6e-0ae42d5130cd",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "\"User found with e-mail % \" mailForm.mail",
+					"logMessage": "\"User found with e-mail % \" userInput.mail",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -409,7 +409,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "callNode-3629f32f-56da-431d-94f2-3b6a67fa12ef",
@@ -937,7 +937,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1564,8 +1564,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3031.011664309034,
-		"y": -592.2451451540138,
-		"zoom": 0.7169776240079136
+		"x": -1353,
+		"y": -51,
+		"zoom": 1
 	}
 }
