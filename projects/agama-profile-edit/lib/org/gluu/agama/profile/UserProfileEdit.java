@@ -90,8 +90,8 @@ public class UserProfileEdit extends UserProfileEditService{
         String htmlBody = EmailTemplate.get(otp);
 
         MailService mailService = CdiUtil.bean(MailService.class);
-        if (mailService.sendMailSigned(from, from, to, null, subject, msgText, htmlBody)) {
-            LogUtils.log("E-mail has been delivered to % with code %", to, otp);
+        if (mailService.sendMailSigned(from, from, mail, null, subject, textBody, htmlBody)) {
+            LogUtils.log("E-mail has been delivered to % with code %", mail, otp);
             return otp;
         }
 
