@@ -294,7 +294,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "whenNode-9d33dc21-e01f-43e3-8a6e-0ae42d5130cd",
@@ -920,7 +920,8 @@
 					"exceptionVariableField": "",
 					"callType": "Call method on instance",
 					"arguments": [
-						"userProfiles"
+						"userProfiles",
+						"userInput.mail"
 					],
 					"nodeIcon": "material-symbols:code",
 					"nodeColor": "",
@@ -936,7 +937,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1563,8 +1564,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1032,
-		"y": -211,
+		"x": -4627,
+		"y": -976,
 		"zoom": 1
 	}
 }
