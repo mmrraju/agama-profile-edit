@@ -12,7 +12,7 @@ public abstract class UserProfileEditService {
 
     public abstract Map<String, Object> validateInputs(Map<String, String> profile);
 
-    public abstract String updateProfile (Map<String, String> profile);
+    public abstract String updateProfile (Map<String, String> profile, String mail);
 
     public static UserProfileEditService getInstance(){
         return UserProfileEdit.getInstance();
