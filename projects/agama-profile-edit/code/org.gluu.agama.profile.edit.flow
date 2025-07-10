@@ -46,8 +46,7 @@ Repeat 6 times max
                               // Profile update successful
                               Log "@info Profile update successfully for %" user.uid
                               // Finish successfully
-                              it_peqdi = {success:true, data: { userId: user.inum}}
-                              Finish it_peqdi
+                              Finish user.uid
                          Otherwise
                               // Validate message
                               profileUpdateFeedback.errorMessage = validation.message
