@@ -45,6 +45,7 @@ Repeat 6 times max
                               updateProfile = Call userProfileEditService updateProfile userProfiles userInput.mail
                               // Profile update successful
                               Log "@info Profile update successfully for %" user.uid
+                              ack = RRF "acknowledgement.ftlh" 
                               // Finish successfully
                               Finish user.uid
                          Otherwise
