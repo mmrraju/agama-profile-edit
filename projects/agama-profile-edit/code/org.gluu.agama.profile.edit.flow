@@ -44,10 +44,10 @@ Repeat 6 times max
                               // Update user profile
                               updateProfile = Call userProfileEditService updateProfile userProfiles userInput.mail
                               // Profile update successful
-                              Log "@info Profile update successfully"
+                              Log "@info Profile update successfully %" user.uid
                               // Finish successfully
-                              it_ynnuw = {success:true, data: { userId: user.inum}}
-                              Finish it_ynnuw
+                              it_xtiso = {success:true, data: { userId: user.inum}}
+                              Finish it_xtiso
                          Otherwise
                               // Validate message
                               profileUpdateFeedback.errorMessage = validation.message
