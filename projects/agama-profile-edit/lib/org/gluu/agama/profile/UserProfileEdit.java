@@ -101,7 +101,7 @@ public class UserProfileEdit extends UserProfileEditService{
 
     @Override
     public Map<String, Object> validateInputs(Map<String, String> profile) {
-        LogUtils.log("Validate inputs ");
+        LogUtils.log("Validate inputs %", profile);
         Map<String, Object> result = new HashMap<>();
         if (StringHelper.isEmpty(profile.get(GIVEN_NAME))) {
             result.put("valid", false);
