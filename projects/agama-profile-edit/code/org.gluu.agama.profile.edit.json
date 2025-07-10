@@ -996,7 +996,7 @@
 				},
 				"previousNodeId": "callNode-9625bdd9-9710-428d-b203-5aeef6224efd",
 				"agamaData": {
-					"logMessage": "\"Profile update successfully %\" user.uid",
+					"logMessage": "\"Profile update successfully for %\" user.uid",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
