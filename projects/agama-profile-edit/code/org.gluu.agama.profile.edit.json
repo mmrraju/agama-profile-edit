@@ -409,7 +409,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "callNode-3629f32f-56da-431d-94f2-3b6a67fa12ef",
@@ -996,7 +996,7 @@
 				},
 				"previousNodeId": "callNode-9625bdd9-9710-428d-b203-5aeef6224efd",
 				"agamaData": {
-					"logMessage": "\"Profile update successfully\"",
+					"logMessage": "\"Profile update successfully %\" user.uid",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -1011,7 +1011,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "finishNode-f0f1cb4e-0d32-4389-9d77-18a7f9def93b",
@@ -1564,8 +1564,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1353,
-		"y": -51,
+		"x": -4817,
+		"y": -1066,
 		"zoom": 1
 	}
 }
