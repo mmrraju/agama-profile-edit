@@ -1011,7 +1011,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "finishNode-f0f1cb4e-0d32-4389-9d77-18a7f9def93b",
@@ -1036,8 +1036,8 @@
 					"hasComment": true,
 					"comment": "Finish successfully",
 					"flowfilename": "",
-					"returnVariable": "{ userId: user.inum}",
-					"finishMode": "withSuccess",
+					"returnVariable": "user.uid",
+					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
 			},
@@ -1045,7 +1045,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		}
 	],
 	"edges": [
