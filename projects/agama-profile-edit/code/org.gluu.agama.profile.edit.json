@@ -1038,7 +1038,7 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Show acknowledgement UI page for successful update"
 				}
 			},
 			"measured": {
