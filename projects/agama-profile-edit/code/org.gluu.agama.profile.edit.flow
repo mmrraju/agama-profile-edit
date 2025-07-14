@@ -1,5 +1,6 @@
 Flow org.gluu.agama.profile.edit
      Basepath ""
+     Timeout 6000 seconds
 // Profile edit flow starting
 Log "@info Profile edit flow starting..."
 // Create  variable for UI feedback
