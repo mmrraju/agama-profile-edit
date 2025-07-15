@@ -22,7 +22,8 @@ import org.gluu.agama.profile.service.EmailTemplate;
 import org.gluu.agama.profile.service.UserProfileEditService;
 
 public class UserProfileEdit extends UserProfileEditService{
-
+    private static final String JANS_STATUS = "jansStatus";
+    private static final String GENDER = "gender";
     private static final String COUNTRY = "country";
     private static final String SN = "sn";
     private static final String CONFIRM_PASSWORD = "confirmPassword";
@@ -127,7 +128,7 @@ public class UserProfileEdit extends UserProfileEditService{
     @Override
     public String updateProfile(Map<String, String> profile, String email) {
 
-        Set<String> attributes = new HashSet<>(Arrays.asList(SN, DISPLAY_NAME, GIVEN_NAME));
+        Set<String> attributes = new HashSet<>(Arrays.asList(SN, DISPLAY_NAME, GIVEN_NAME, MAIL, JANS_STATUS, GENDER));
         User user = getUser(MAIL, email);
         attributes.forEach(attr -> {
             String val = profile.get(attr);
