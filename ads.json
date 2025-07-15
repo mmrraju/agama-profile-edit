@@ -20,24 +20,5 @@
             "": {}
         },
         "name": "agama-profile-edit"
-    },
-    "test_project": {
-        "projectName": "test_project",
-        "description": "This is test project",
-        "type": "community",
-        "author": "mmrraju",
-        "version": "0.0.1",
-        "authorWebsite": "https://github.com/mmrraju/agama-profile-edit",
-        "githubUri": "https://github.com/mmrraju/agama-profile-edit",
-        "license": "apache-2.0",
-        "lastUpdated": "1752588797454",
-        "tags": [
-            "jans"
-        ],
-        "noDirectLaunch": [],
-        "configs": {
-            "org.gluu.agama": {}
-        },
-        "name": "test_project"
     }
 }
