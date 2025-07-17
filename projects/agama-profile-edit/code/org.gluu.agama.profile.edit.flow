@@ -43,7 +43,7 @@ Repeat 6 times max
                          // If successfully validate
                          When validation.valid is true
                               // Update user profile
-                              updateProfile = Call userProfileEditService updateProfile userProfiles userInput.mail
+                              updateProfile | E = Call userProfileEditService updateProfile userProfiles userInput.mail
                               // Profile update success or not
                               When updateProfile.empty is not true
                                    // Show acknowledgement UI page for successful update
