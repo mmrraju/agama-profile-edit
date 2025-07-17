@@ -901,8 +901,8 @@
 			"id": "callNode-9625bdd9-9710-428d-b203-5aeef6224efd",
 			"type": "callNode",
 			"position": {
-				"x": 5279,
-				"y": 1381
+				"x": 5160.336096415701,
+				"y": 1358.6289362095174
 			},
 			"data": {
 				"id": "callNode-9625bdd9-9710-428d-b203-5aeef6224efd",
@@ -979,39 +979,6 @@
 			},
 			"selected": false,
 			"dragging": false
-		},
-		{
-			"id": "logNode-de5eb9b9-a69e-404e-b71f-90bd21733334",
-			"type": "logNode",
-			"position": {
-				"x": 5279,
-				"y": 1381
-			},
-			"data": {
-				"id": "logNode-de5eb9b9-a69e-404e-b71f-90bd21733334",
-				"type": "logNode",
-				"position": {
-					"x": 5529,
-					"y": 1381
-				},
-				"previousNodeId": "logNode-3ad85753-e918-492c-adf5-a3f44133b8ca",
-				"agamaData": {
-					"logMessage": "\"Profile update successfully for %\" user.uid",
-					"logLevel": "info",
-					"nodeIcon": "octicon:log-16",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": "Profile update successful"
-				}
-			},
-			"measured": {
-				"width": 170,
-				"height": 124
-			},
-			"selected": false
 		},
 		{
 			"id": "rrfNode-3b44eb04-f82c-4c28-a5ac-9f9271315654",
@@ -1126,6 +1093,45 @@
 			},
 			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "assignmentNode-6b9a7afa-dd65-4edd-b0d4-79a821553ed2",
+			"type": "assignmentNode",
+			"position": {
+				"x": 5690,
+				"y": 1016
+			},
+			"data": {
+				"id": "assignmentNode-6b9a7afa-dd65-4edd-b0d4-79a821553ed2",
+				"type": "assignmentNode",
+				"position": {
+					"x": 5690,
+					"y": 1016
+				},
+				"previousNodeId": "whenNode-c0c6b31a-05b1-4d62-aeb9-f0e6056ecb8c",
+				"branching": "otherwise",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "E",
+							"assignedVariableName": "profileUpdateFeedback"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Update error\n"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -1659,11 +1665,30 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__whenNode-c0c6b31a-05b1-4d62-aeb9-f0e6056ecb8csource_whenNode-c0c6b31a-05b1-4d62-aeb9-f0e6056ecb8c_success-rrfNode-3b44eb04-f82c-4c28-a5ac-9f9271315654target_rrfNode-3b44eb04-f82c-4c28-a5ac-9f9271315654"
+		},
+		{
+			"id": "whenNode-c0c6b31a-05b1-4d62-aeb9-f0e6056ecb8c-assignmentNode-6b9a7afa-dd65-4edd-b0d4-79a821553ed2",
+			"type": "default",
+			"source": "whenNode-c0c6b31a-05b1-4d62-aeb9-f0e6056ecb8c",
+			"target": "assignmentNode-6b9a7afa-dd65-4edd-b0d4-79a821553ed2",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "otherwise",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-c0c6b31a-05b1-4d62-aeb9-f0e6056ecb8c_otherwise"
 		}
 	],
 	"viewport": {
-		"x": -5260.486391231621,
-		"y": -1218.23906539703,
+		"x": -4952.4863912316205,
+		"y": -944.2390653970299,
 		"zoom": 1.0281138266560663
 	}
 }
