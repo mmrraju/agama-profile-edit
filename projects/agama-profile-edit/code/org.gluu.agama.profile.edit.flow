@@ -50,6 +50,9 @@ Repeat 6 times max
                                    ack = RRF "acknowledgement.ftlh" 
                                    // Finish successfully
                                    Finish user.uid
+                              Otherwise
+                                   // Update error
+                                   profileUpdateFeedback = E
                          Otherwise
                               // Validate message
                               profileUpdateFeedback.errorMessage = validation.message
