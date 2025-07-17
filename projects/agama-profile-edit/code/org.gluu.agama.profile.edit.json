@@ -917,7 +917,7 @@
 					"javaClassName": "",
 					"javaMethodName": "updateProfile",
 					"javaVariableName": "userProfileEditService",
-					"exceptionVariableField": "",
+					"exceptionVariableField": "E",
 					"callType": "Call method on instance",
 					"arguments": [
 						"userProfiles",
@@ -937,7 +937,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1131,7 +1131,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
