@@ -52,7 +52,7 @@ Repeat 6 times max
                                    Finish user.uid
                               Otherwise
                                    // Update error
-                                   profileUpdateFeedback = E
+                                   profileUpdateFeedback.errorMessage = E
                          Otherwise
                               // Validate message
                               profileUpdateFeedback.errorMessage = validation.message
