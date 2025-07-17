@@ -44,12 +44,12 @@ Repeat 6 times max
                          When validation.valid is true
                               // Update user profile
                               updateProfile = Call userProfileEditService updateProfile userProfiles userInput.mail
-                              // Profile update successful
-                              Log "@info Profile update successfully for %" user.uid
-                              // Show acknowledgement UI page for successful update
-                              ack = RRF "acknowledgement.ftlh" 
-                              // Finish successfully
-                              Finish user.uid
+                              // Profile update success or not
+                              When updateProfile.empty is not true
+                                   // Show acknowledgement UI page for successful update
+                                   ack = RRF "acknowledgement.ftlh" 
+                                   // Finish successfully
+                                   Finish user.uid
                          Otherwise
                               // Validate message
                               profileUpdateFeedback.errorMessage = validation.message
