@@ -937,7 +937,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1115,7 +1115,7 @@
 						{
 							"variableTypeCheck": true,
 							"assignmentExpression": "E",
-							"assignedVariableName": "profileUpdateFeedback"
+							"assignedVariableName": "profileUpdateFeedback.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -1131,7 +1131,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		}
 	],
 	"edges": [
