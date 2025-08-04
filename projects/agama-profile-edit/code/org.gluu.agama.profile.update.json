@@ -1,36 +1,99 @@
 {
-  "nodes": [
-    {
-      "id": "startNode-2f58c07e-49e2-4a59-80e8-9462de3fe8f3",
-      "type": "startNode",
-      "sourcePosition": "right",
-      "position": {
-        "x": 30,
-        "y": 30
-      },
-      "deletable": false,
-      "data": {
-        "id": "startNode-2f58c07e-49e2-4a59-80e8-9462de3fe8f3",
-        "type": "startNode",
-        "position": {
-          "x": 30,
-          "y": 40
-        },
-        "agamaData": {
-          "isTopLevelFlow": true,
-          "basepath": "",
-          "configParams": "{}",
-          "nodeIcon": "material-symbols:line-start-square",
-          "timeout": "",
-          "inputs": "",
-          "configs": "",
-          "flowname": "org.gluu.agama.profile.update",
-          "displayName": "Update user",
-          "creationDate": "04/08/2025",
-          "hasComment": true,
-          "comment": ""
-        }
-      }
-    }
-  ]
+	"nodes": [
+		{
+			"id": "startNode-2f58c07e-49e2-4a59-80e8-9462de3fe8f3",
+			"type": "startNode",
+			"sourcePosition": "right",
+			"position": {
+				"x": 30,
+				"y": 30
+			},
+			"deletable": false,
+			"data": {
+				"id": "startNode-2f58c07e-49e2-4a59-80e8-9462de3fe8f3",
+				"type": "startNode",
+				"position": {
+					"x": 30,
+					"y": 40
+				},
+				"agamaData": {
+					"isTopLevelFlow": true,
+					"basepath": "",
+					"configParams": "{}",
+					"nodeIcon": "material-symbols:line-start-square",
+					"timeout": "",
+					"inputs": "",
+					"configs": "",
+					"flowname": "org.gluu.agama.profile.update",
+					"displayName": "Update user",
+					"creationDate": "04/08/2025",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			}
+		},
+		{
+			"id": "logNode-64f85fdb-18e7-48de-8ce3-b7680cfa2b1f",
+			"type": "logNode",
+			"position": {
+				"x": 280,
+				"y": 30
+			},
+			"data": {
+				"id": "logNode-64f85fdb-18e7-48de-8ce3-b7680cfa2b1f",
+				"type": "logNode",
+				"position": {
+					"x": 280,
+					"y": 30
+				},
+				"previousNodeId": "startNode-2f58c07e-49e2-4a59-80e8-9462de3fe8f3",
+				"agamaData": {
+					"logMessage": "\"User update profile update start\"",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "User profile update log"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": true
+		}
+	],
+	"edges": [
+		{
+			"id": "startNode-2f58c07e-49e2-4a59-80e8-9462de3fe8f3-logNode-64f85fdb-18e7-48de-8ce3-b7680cfa2b1f",
+			"type": "default",
+			"source": "startNode-2f58c07e-49e2-4a59-80e8-9462de3fe8f3",
+			"target": "logNode-64f85fdb-18e7-48de-8ce3-b7680cfa2b1f",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_startNode-2f58c07e-49e2-4a59-80e8-9462de3fe8f3"
+		}
+	],
+	"viewport": {
+		"x": 0,
+		"y": 0,
+		"zoom": 1
+	}
 }
