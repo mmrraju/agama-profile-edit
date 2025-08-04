@@ -1,2 +1,4 @@
 Flow org.gluu.agama.profile.update
      Basepath ""
+// User profile update log
+Log "@info User update profile update start"
