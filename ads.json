@@ -17,8 +17,7 @@
         "noDirectLaunch": [],
         "configs": {
             "org.gluu.agama.profile.edit": {},
-            "": {},
-            "org.gluu.agama.profile.update": {}
+            "": {}
         },
         "name": "agama-profile-edit"
     }
