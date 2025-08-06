@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {
+      "id": "startNode-c946bfb2-205e-4758-86d0-3f8eb463e805",
+      "type": "startNode",
+      "sourcePosition": "right",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "deletable": false,
+      "data": {
+        "id": "startNode-c946bfb2-205e-4758-86d0-3f8eb463e805",
+        "type": "startNode",
+        "position": {
+          "x": 30,
+          "y": 40
+        },
+        "agamaData": {
+          "isTopLevelFlow": true,
+          "basepath": "",
+          "configParams": "{}",
+          "nodeIcon": "material-symbols:line-start-square",
+          "timeout": "",
+          "inputs": "",
+          "configs": "",
+          "flowname": "org.gluu.agama.profile.edit",
+          "displayName": "User update",
+          "creationDate": "07/08/2025",
+          "hasComment": true,
+          "comment": ""
+        }
+      }
+    }
+  ]
+}
