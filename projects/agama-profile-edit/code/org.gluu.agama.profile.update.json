@@ -67,6 +67,49 @@
 				"width": 170,
 				"height": 124
 			},
+			"selected": false
+		},
+		{
+			"id": "assignmentNode-2588202c-250b-460f-851b-801656e890f0",
+			"type": "assignmentNode",
+			"position": {
+				"x": 530,
+				"y": 30
+			},
+			"data": {
+				"id": "assignmentNode-2588202c-250b-460f-851b-801656e890f0",
+				"type": "assignmentNode",
+				"position": {
+					"x": 530,
+					"y": 30
+				},
+				"previousNodeId": "logNode-64f85fdb-18e7-48de-8ce3-b7680cfa2b1f",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{}",
+							"assignedVariableName": "uiFeedback"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{}",
+							"assignedVariableName": "emailObj"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Create  variable for UI feedback"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
 			"selected": true
 		}
 	],
@@ -89,11 +132,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_startNode-2f58c07e-49e2-4a59-80e8-9462de3fe8f3"
+		},
+		{
+			"id": "logNode-64f85fdb-18e7-48de-8ce3-b7680cfa2b1f-assignmentNode-2588202c-250b-460f-851b-801656e890f0",
+			"type": "default",
+			"source": "logNode-64f85fdb-18e7-48de-8ce3-b7680cfa2b1f",
+			"target": "assignmentNode-2588202c-250b-460f-851b-801656e890f0",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-64f85fdb-18e7-48de-8ce3-b7680cfa2b1f"
 		}
 	],
 	"viewport": {
-		"x": 0,
-		"y": 0,
-		"zoom": 1
+		"x": 9.629555776939583,
+		"y": 137.92797602987253,
+		"zoom": 0.9999999999999999
 	}
 }
