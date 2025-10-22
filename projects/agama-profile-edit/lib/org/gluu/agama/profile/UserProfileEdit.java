@@ -22,15 +22,17 @@ import org.gluu.agama.profile.service.EmailTemplate;
 import org.gluu.agama.profile.service.UserProfileEditService;
 
 public class UserProfileEdit extends UserProfileEditService{
+
     private static final String JANS_STATUS = "jansStatus";
     private static final String GENDER = "gender";
     private static final String COUNTRY = "country";
-    private static final String SN = "sn";
     private static final String CONFIRM_PASSWORD = "confirmPassword";
     private static final String MAIL = "mail";
     private static final String UID = "uid";
     private static final String DISPLAY_NAME = "displayName";
-    private static final String GIVEN_NAME = "givenName";
+    private static final String FIRST_NAME = "givenName";
+    private static final String MIDDLE_NAME = "middleName";
+    private static final String LAST_NAME = "sn";
     private static final String PASSWORD = "userPassword";
     private static final String INUM_ATTR = "inum";
     private static final int OTP_LENGTH = 6;
@@ -50,6 +52,7 @@ public class UserProfileEdit extends UserProfileEditService{
 
     @Override
     public Map<String, String> getUserEntity(String email) {
+        Map<String, String> userMap = new HashMap<>();
         User user = getUser(MAIL, email);
         boolean local = user != null;
         LogUtils.log("There is % local account for %", local ? "a" : "no", email);
@@ -57,26 +60,25 @@ public class UserProfileEdit extends UserProfileEditService{
         if (local) {            
             String uid = getSingleValuedAttr(user, UID);
             String inum = getSingleValuedAttr(user, INUM_ATTR);
-            String name = getSingleValuedAttr(user, GIVEN_NAME);
-    
-            if (name == null) {
-                name = getSingleValuedAttr(user, DISPLAY_NAME);
-                if (name == null && email != null && email.contains("@")) {
-                    name = email.substring(0, email.indexOf("@"));
-                }
-            }
-    
+            String firstName = getSingleValuedAttr(user, FIRST_NAME);
+            String displayName = getSingleValuedAttr(user, DISPLAY_NAME);
+            String lastName = getSingleValuedAttr(user, LAST_NAME);
+            String middleName = getSingleValuedAttr(user, MIDDLE_NAME);
             // Creating a truly modifiable map
-            Map<String, String> userMap = new HashMap<>();
             userMap.put(UID, uid);
             userMap.put(INUM_ATTR, inum);
-            userMap.put("name", name);
-            userMap.put("email", email);
+            userMap.put(MAIL, email);
+            userMap.put(FIRST_NAME, firstName);           
+            userMap.put(MIDDLE_NAME, middleName);
+            userMap.put(LAST_NAME, lastName);
+            userMap.put(DISPLAY_NAME, displayName);
     
             return userMap;
+        }else{
+            LogUtils.log("User not found for : %", email);
         }
     
-        return new HashMap<>();
+        return userMap;
     }
 
     @Override
@@ -104,7 +106,7 @@ public class UserProfileEdit extends UserProfileEditService{
     public Map<String, Object> validateInputs(Map<String, String> profile) {
         LogUtils.log("Validate inputs %", profile);
         Map<String, Object> result = new HashMap<>();
-        if (StringHelper.isEmpty(profile.get(GIVEN_NAME))) {
+        if (StringHelper.isEmpty(profile.get(FIRST_NAME))) {
             result.put("valid", false);
             result.put("message", "Given name not provided");
             return result;
@@ -114,7 +116,7 @@ public class UserProfileEdit extends UserProfileEditService{
             result.put("message", "Display name not provided");
             return result;
         }  
-        if (StringHelper.isEmpty(profile.get(SN))) {
+        if (StringHelper.isEmpty(profile.get(LAST_NAME))) {
             result.put("valid", false);
             result.put("message", "Last name not provided");
             return result;
@@ -128,7 +130,7 @@ public class UserProfileEdit extends UserProfileEditService{
     @Override
     public String updateProfile(Map<String, String> profile, String email) {
 
-        Set<String> attributes = new HashSet<>(Arrays.asList(SN, DISPLAY_NAME, GIVEN_NAME, MAIL, JANS_STATUS, GENDER));
+        Set<String> attributes = new HashSet<>(Arrays.asList(FIRST_NAME, MIDDLE_NAME, DISPLAY_NAME, LAST_NAME, MAIL, JANS_STATUS, GENDER ));
         User user = getUser(MAIL, email);
         attributes.forEach(attr -> {
             String val = profile.get(attr);
@@ -166,7 +168,7 @@ public class UserProfileEdit extends UserProfileEditService{
     private SmtpConfiguration getSmtpConfiguration() {
         ConfigurationService configurationService = CdiUtil.bean(ConfigurationService.class);
         SmtpConfiguration smtpConfiguration = configurationService.getConfiguration().getSmtpConfiguration();
-        LogUtils.log("Your smtp configuration is %", smtpConfiguration);
+        LogUtils.log("Your smtp configuration is : %", smtpConfiguration);
         return smtpConfiguration;
 
     }     
