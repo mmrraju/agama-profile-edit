@@ -171,5 +171,5 @@ public class UserProfileEdit extends UserProfileEditService{
         LogUtils.log("Your smtp configuration is : %", smtpConfiguration);
         return smtpConfiguration;
 
-    }     
+    }    
 }
