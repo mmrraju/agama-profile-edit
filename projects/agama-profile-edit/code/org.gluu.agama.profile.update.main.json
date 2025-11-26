@@ -340,21 +340,24 @@
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
 					"templatePath": "profile.ftlh",
-					"asssignedVariableName": "uiInput",
+					"asssignedVariableName": "userProfiles",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "Input from user",
-					"arguments": ""
+					"comment": " Profile update form",
+					"arguments": [
+						""
+					]
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": true,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -531,8 +534,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1706,
-		"y": -255,
+		"x": -1944,
+		"y": -383,
 		"zoom": 1
 	}
 }
