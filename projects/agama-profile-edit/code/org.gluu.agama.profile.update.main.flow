@@ -10,4 +10,3 @@ Repeat 1 times max
      Log "@info Trigger Agama-SMTP flow"
      // Trigger smtp flow
      result = Trigger org.gluu.agama.smtp.main 
-          Override templates "/jans-auth/fl/hyyqd9/main.fls" "/jans-auth/fl/hyyqd9/main.fls" "/jans-auth/fl/hyyqd9/otp.fls" "/jans-auth/fl/hyyqd9/otp.fls" 
