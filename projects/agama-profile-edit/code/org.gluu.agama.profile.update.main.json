@@ -954,6 +954,40 @@
 				"width": 170,
 				"height": 124
 			},
+			"selected": false
+		},
+		{
+			"id": "finishNode-de9a3f7c-6a83-4a84-aabc-73baf437bebc",
+			"type": "finishNode",
+			"position": {
+				"x": 1280,
+				"y": 30
+			},
+			"data": {
+				"id": "finishNode-de9a3f7c-6a83-4a84-aabc-73baf437bebc",
+				"type": "finishNode",
+				"position": {
+					"x": 1280,
+					"y": 30
+				},
+				"previousNodeId": "logNode-da6f5303-46b4-482a-bf4e-fbd4e4707ea4",
+				"agamaData": {
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Flow finished wit error ",
+					"flowfilename": "",
+					"returnVariable": "\"You've cross your max attempt limit\"",
+					"finishMode": "withFailure",
+					"nodeIcon": "material-symbols:line-end-square-rounded"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
 			"selected": true
 		}
 	],
@@ -1431,6 +1465,25 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_repeatNode-c97f70f7-eaec-4b9e-bcfe-b6fc53d27266_continue"
+		},
+		{
+			"id": "logNode-da6f5303-46b4-482a-bf4e-fbd4e4707ea4-finishNode-de9a3f7c-6a83-4a84-aabc-73baf437bebc",
+			"type": "default",
+			"source": "logNode-da6f5303-46b4-482a-bf4e-fbd4e4707ea4",
+			"target": "finishNode-de9a3f7c-6a83-4a84-aabc-73baf437bebc",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-da6f5303-46b4-482a-bf4e-fbd4e4707ea4"
 		}
 	],
 	"viewport": {
