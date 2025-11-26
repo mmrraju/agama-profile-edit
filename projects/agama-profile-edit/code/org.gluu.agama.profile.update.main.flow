@@ -11,7 +11,7 @@ Repeat 1 times max
      // Trigger smtp flow
      result = Trigger org.gluu.agama.smtp.main 
      // Result from SMTP
-     Log "@info Result from SMTP : % and uid % " result result.data.uid
+     Log "@info Result from SMTP : %  " result
      // if result is true
      When result.success is true
           // Result is True
