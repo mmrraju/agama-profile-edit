@@ -227,7 +227,7 @@
 				},
 				"previousNodeId": "triggerNode-bc8c9db9-440e-424b-872f-25a81af585c4",
 				"agamaData": {
-					"logMessage": "\"Result from SMTP : % \" result",
+					"logMessage": "\"Result from SMTP : % and uid % \" result result.data.uid",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -822,8 +822,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1155,
-		"y": -77,
+		"x": -798,
+		"y": 43,
 		"zoom": 1
 	}
 }
