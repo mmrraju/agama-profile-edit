@@ -24,3 +24,7 @@ Repeat 1 times max
           validation = Call userProfileEditService validateInputs userProfiles
           // Validation result log
           Log "@trace Validation result:  % , % , %" validation validation.valid validation.message
+          // If successfully validate
+          When validation.valid is true
+               // Update user profile
+               | E = Call userProfileEditService updateProfile userProfiles
