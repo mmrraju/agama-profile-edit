@@ -203,12 +203,12 @@
 					"comment": "",
 					"overrides": [
 						{
-							"from": "org/gluu/agama/smtp/ask_email.ftl",
-							"to": "custom/ask_email.ftl"
+							"from": "/jans-auth/fl/hyyqd9/main.fls",
+							"to": "/jans-auth/fl/hyyqd9/main.fls"
 						},
 						{
-							"from": "org/gluu/agama/smtp/enter_otp.ftl",
-							"to": "custom/enter_otp.ftl"
+							"from": "/jans-auth/fl/hyyqd9/otp.fls",
+							"to": "/jans-auth/fl/hyyqd9/otp.fls"
 						}
 					]
 				}
