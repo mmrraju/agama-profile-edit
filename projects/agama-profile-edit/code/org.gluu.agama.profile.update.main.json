@@ -201,16 +201,7 @@
 					"displayName": "",
 					"hasComment": true,
 					"comment": "Trigger smtp flow",
-					"overrides": [
-						{
-							"from": "/jans-auth/fl/hyyqd9/main.fls",
-							"to": "/jans-auth/fl/hyyqd9/main.fls"
-						},
-						{
-							"from": "/jans-auth/fl/hyyqd9/otp.fls",
-							"to": "/jans-auth/fl/hyyqd9/otp.fls"
-						}
-					]
+					"overrides": []
 				}
 			},
 			"measured": {
