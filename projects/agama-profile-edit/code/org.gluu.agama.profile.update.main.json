@@ -356,8 +356,46 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "callNode-23928e70-75bb-40dc-a2be-67e7866d08f7",
+			"type": "callNode",
+			"position": {
+				"x": 2499,
+				"y": 536
+			},
+			"data": {
+				"id": "callNode-23928e70-75bb-40dc-a2be-67e7866d08f7",
+				"type": "callNode",
+				"position": {
+					"x": 2499,
+					"y": 536
+				},
+				"previousNodeId": "rrfNode-f88bfd4d-5e2c-41c2-a466-e871f56b9e97",
+				"agamaData": {
+					"javaClassName": "org.gluu.agama.profile.service.UserProfileEditService",
+					"javaMethodName": "getInstance",
+					"javaVariableName": "",
+					"exceptionVariableField": "",
+					"callType": "Call static method",
+					"arguments": [],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "create an instance of user profile update service\n",
+					"asssignedVariableName": "userProfileEditService"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -531,11 +569,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_logNode-88cb3e6b-0802-4c39-8dff-f8fa26a669df"
+		},
+		{
+			"id": "rrfNode-f88bfd4d-5e2c-41c2-a466-e871f56b9e97-callNode-23928e70-75bb-40dc-a2be-67e7866d08f7",
+			"type": "default",
+			"source": "rrfNode-f88bfd4d-5e2c-41c2-a466-e871f56b9e97",
+			"target": "callNode-23928e70-75bb-40dc-a2be-67e7866d08f7",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_rrfNode-f88bfd4d-5e2c-41c2-a466-e871f56b9e97"
 		}
 	],
 	"viewport": {
-		"x": -1944,
-		"y": -383,
+		"x": -2201,
+		"y": -328,
 		"zoom": 1
 	}
 }
