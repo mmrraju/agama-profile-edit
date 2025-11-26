@@ -227,7 +227,7 @@
 				},
 				"previousNodeId": "triggerNode-bc8c9db9-440e-424b-872f-25a81af585c4",
 				"agamaData": {
-					"logMessage": "\"Result from SMTP : % and uid % \" result result.data.uid",
+					"logMessage": "\"Result from SMTP : %  \" result",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -242,7 +242,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "whenNode-af81fb93-1cf3-483d-988c-0d2e75c107d4",
@@ -547,7 +547,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "callNode-25a08356-3587-434d-9894-53cff86ef969",
@@ -877,8 +877,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2427,
-		"y": -275,
+		"x": -1429,
+		"y": -176,
 		"zoom": 1
 	}
 }
