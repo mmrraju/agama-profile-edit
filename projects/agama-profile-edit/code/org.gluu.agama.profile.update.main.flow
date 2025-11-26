@@ -37,8 +37,8 @@ Repeat 1 times max
                     // Show acknowledgement UI page for successful update
                     ack = RRF "acknowledgement.ftlh" 
                     // Finish successfully
-                    it_leuze = {success:true, data: { userId: user.uid}}
-                    Finish it_leuze
+                    it_yeswe = {success:true, data: { userId: user.uid}}
+                    Finish it_yeswe
                Otherwise
                     // Assign error message
                     uifeedback.errorMessage = E
@@ -50,3 +50,5 @@ Repeat 1 times max
      Otherwise
           // Assing errro message
           uifeedback.errorMessage = "SMTP flow not found"
+          // show error message
+          RRF "error.ftlh" 
