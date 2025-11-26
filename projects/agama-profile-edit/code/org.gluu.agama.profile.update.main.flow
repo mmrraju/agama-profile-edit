@@ -37,8 +37,8 @@ Repeat 1 times max
                     // Show acknowledgement UI page for successful update
                     ack = RRF "acknowledgement.ftlh" 
                     // Finish successfully
-                    it_dsdgo = {success:true, data: { userId: user.uid}}
-                    Finish it_dsdgo
+                    it_xrgsp = {success:true, data: { userId: user.uid}}
+                    Finish it_xrgsp
                Otherwise
                     // Assign error message
                     uifeedback.errorMessage = E
