@@ -977,9 +977,9 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "Flow finished wit error ",
+					"comment": "Flow finished with error ",
 					"flowfilename": "",
-					"returnVariable": "\"You've cross your max attempt limit\"",
+					"returnVariable": "You've cross your max attempt limit",
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
