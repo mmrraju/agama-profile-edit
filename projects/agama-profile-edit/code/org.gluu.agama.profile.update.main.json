@@ -178,8 +178,8 @@
 			"id": "triggerNode-bc8c9db9-440e-424b-872f-25a81af585c4",
 			"type": "triggerNode",
 			"position": {
-				"x": 1280,
-				"y": 280
+				"x": 1249,
+				"y": 278
 			},
 			"data": {
 				"id": "triggerNode-bc8c9db9-440e-424b-872f-25a81af585c4",
@@ -202,6 +202,40 @@
 					"hasComment": true,
 					"comment": "Trigger smtp flow",
 					"overrides": []
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "logNode-5bb3f18b-4cdb-4f8b-935a-5e14277f55b5",
+			"type": "logNode",
+			"position": {
+				"x": 1499,
+				"y": 278
+			},
+			"data": {
+				"id": "logNode-5bb3f18b-4cdb-4f8b-935a-5e14277f55b5",
+				"type": "logNode",
+				"position": {
+					"x": 1499,
+					"y": 278
+				},
+				"previousNodeId": "triggerNode-bc8c9db9-440e-424b-872f-25a81af585c4",
+				"agamaData": {
+					"logMessage": "\"Result from SMTP \"",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Result from SMTP"
 				}
 			},
 			"measured": {
@@ -306,11 +340,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_logNode-07264cf1-f7ea-4504-98f9-a054d4718a94"
+		},
+		{
+			"id": "triggerNode-bc8c9db9-440e-424b-872f-25a81af585c4-logNode-5bb3f18b-4cdb-4f8b-935a-5e14277f55b5",
+			"type": "default",
+			"source": "triggerNode-bc8c9db9-440e-424b-872f-25a81af585c4",
+			"target": "logNode-5bb3f18b-4cdb-4f8b-935a-5e14277f55b5",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_triggerNode-bc8c9db9-440e-424b-872f-25a81af585c4"
 		}
 	],
 	"viewport": {
-		"x": -444,
-		"y": -31,
+		"x": -1019,
+		"y": -117,
 		"zoom": 1
 	}
 }
