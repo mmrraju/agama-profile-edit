@@ -22,3 +22,5 @@ Repeat 1 times max
           userProfileEditService = Call org.gluu.agama.profile.service.UserProfileEditService#getInstance 
           // Validate user profile inputs
           validation = Call userProfileEditService validateInputs userProfiles
+          // Validation result log
+          Log "@trace Validation result:  % , % , %" validation validation.valid validation.message
