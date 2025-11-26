@@ -15,7 +15,7 @@ Repeat 1 times max
      // if result is true
      When result.success is true
           // Result is True
-          Log "@info Result is true"
+          Log "@info Result is true for uid : % and mail : %" result.uid result.mail
           //  Profile update form
           userProfiles = RRF "profile.ftlh" 
           // create an instance of user profile update service
