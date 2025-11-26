@@ -7,3 +7,5 @@ uifeedback = {}
 Repeat 1 times max
      // Trigger agama-smtp flow
      Log "@info Trigger Agama-SMTP flow"
+     result = Trigger org.gluu.agama.smtp.main 
+          Override templates "org/gluu/agama/smtp/ask_email.ftl" "custom/ask_email.ftl" "org/gluu/agama/smtp/enter_otp.ftl" "custom/enter_otp.ftl" 
