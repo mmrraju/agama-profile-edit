@@ -16,10 +16,12 @@ Repeat 1 times max
      When result.success is true
           // Result is True
           Log "@info Result is true for uid : % and mail : %" result.uid result.mail
-          //  Profile update form
-          userProfiles = RRF "profile.ftlh" 
           // create an instance of user profile update service
           userProfileEditService = Call org.gluu.agama.profile.service.UserProfileEditService#getInstance 
+          // Get User details
+          user = Call userProfileEditService getUserEntity result.data.uid
+          // Profile update form
+          userProfiles = RRF "profile.ftlh" user
           // Validate user profile inputs
           validation = Call userProfileEditService validateInputs userProfiles
           // Validation result log
