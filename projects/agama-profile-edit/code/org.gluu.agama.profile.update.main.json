@@ -98,14 +98,14 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Assign veriable"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "repeatNode-c97f70f7-eaec-4b9e-bcfe-b6fc53d27266",
@@ -217,7 +217,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -318,8 +318,8 @@
 		}
 	],
 	"viewport": {
-		"x": -913,
-		"y": -23.375,
+		"x": -123,
+		"y": 20,
 		"zoom": 1
 	}
 }
