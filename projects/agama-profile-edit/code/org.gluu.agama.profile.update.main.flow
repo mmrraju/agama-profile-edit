@@ -16,5 +16,5 @@ Repeat 1 times max
      When result.success is true
           // Result is True
           Log "@info Result is true"
-          // Input from user
-          uiInput = RRF "profile.ftlh" 
+          //  Profile update form
+          userProfiles = RRF "profile.ftlh" 
