@@ -172,6 +172,51 @@
 				"width": 170,
 				"height": 124
 			},
+			"selected": false
+		},
+		{
+			"id": "triggerNode-bc8c9db9-440e-424b-872f-25a81af585c4",
+			"type": "triggerNode",
+			"position": {
+				"x": 1280,
+				"y": 280
+			},
+			"data": {
+				"id": "triggerNode-bc8c9db9-440e-424b-872f-25a81af585c4",
+				"type": "triggerNode",
+				"position": {
+					"x": 1280,
+					"y": 280
+				},
+				"previousNodeId": "logNode-07264cf1-f7ea-4504-98f9-a054d4718a94",
+				"agamaData": {
+					"nodeIcon": "fluent-mdl2:trigger-approval",
+					"flowFileName": "org.gluu.agama.smtp.main",
+					"arguments": [],
+					"asssignedVariableName": "result",
+					"exceptionVariableField": "",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "",
+					"overrides": [
+						{
+							"from": "org/gluu/agama/smtp/ask_email.ftl",
+							"to": "custom/ask_email.ftl"
+						},
+						{
+							"from": "org/gluu/agama/smtp/enter_otp.ftl",
+							"to": "custom/enter_otp.ftl"
+						}
+					]
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
 			"selected": true
 		}
 	],
@@ -251,11 +296,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_repeatNode-c97f70f7-eaec-4b9e-bcfe-b6fc53d27266_repeat"
+		},
+		{
+			"id": "logNode-07264cf1-f7ea-4504-98f9-a054d4718a94-triggerNode-bc8c9db9-440e-424b-872f-25a81af585c4",
+			"type": "default",
+			"source": "logNode-07264cf1-f7ea-4504-98f9-a054d4718a94",
+			"target": "triggerNode-bc8c9db9-440e-424b-872f-25a81af585c4",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-07264cf1-f7ea-4504-98f9-a054d4718a94"
 		}
 	],
 	"viewport": {
-		"x": -585,
-		"y": 19.625,
+		"x": -913,
+		"y": -23.375,
 		"zoom": 1
 	}
 }
