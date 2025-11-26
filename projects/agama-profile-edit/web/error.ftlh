@@ -20,8 +20,12 @@
 			<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png">
 		  </div>
 		  <span class="text-2xl font-semi-bold leading-normal">Error message</span>
-		  <p class="leading-normal">Use your Email
-		  </p>
+		  [#if errorMessage?has_content]
+		  <div role="alert" align="center" class="alert alert-danger mt-3 error">
+			<p>${errorMessage} 
+			</p>
+		  </div>
+		  [/#if]
 		</div>
 	  </div>
 	</div>
