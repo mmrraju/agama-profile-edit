@@ -31,11 +31,11 @@ Repeat 1 times max
                // Update user profile
                updateProfile | E = Call userProfileEditService updateProfile userProfiles
                //  Profile update success or not
-               When updateProfile.empty is true
+               When updateProfile.empty is not true
                     // Profile  successfully updated
                     Log "@info Profile  successfully updated"
                     // Show acknowledgement UI page for successful update
                     ack = RRF "acknowledgement.ftlh" 
                     // Finish successfully
-                    it_zjppa = {success:true, data: { userId: user.uid}}
-                    Finish it_zjppa
+                    it_zqlcg = {success:true, data: { userId: user.uid}}
+                    Finish it_zqlcg
