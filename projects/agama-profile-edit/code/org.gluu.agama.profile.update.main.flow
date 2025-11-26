@@ -36,3 +36,6 @@ Repeat 1 times max
                     Log "@info Profile  successfully updated"
                     // Show acknowledgement UI page for successful update
                     ack = RRF "acknowledgement.ftlh" 
+                    // Finish successfully
+                    it_zjppa = {success:true, data: { userId: user.uid}}
+                    Finish it_zjppa
