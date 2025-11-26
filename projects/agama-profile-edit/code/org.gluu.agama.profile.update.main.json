@@ -318,7 +318,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -580,14 +580,15 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "Update user profile"
+					"comment": "Update user profile",
+					"asssignedVariableName": "updateProfile"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		}
 	],
 	"edges": [
@@ -877,8 +878,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1429,
-		"y": -176,
+		"x": -2755,
+		"y": -362,
 		"zoom": 1
 	}
 }
