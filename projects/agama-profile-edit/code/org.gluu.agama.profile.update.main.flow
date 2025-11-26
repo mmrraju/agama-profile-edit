@@ -37,8 +37,8 @@ Repeat 1 times max
                     // Show acknowledgement UI page for successful update
                     ack = RRF "acknowledgement.ftlh" 
                     // Finish successfully
-                    it_uqwax = {success:true, data: { userId: user.uid}}
-                    Finish it_uqwax
+                    it_leuze = {success:true, data: { userId: user.uid}}
+                    Finish it_leuze
                Otherwise
                     // Assign error message
                     uifeedback.errorMessage = E
@@ -47,3 +47,6 @@ Repeat 1 times max
           Otherwise
                // Assign profile validation error message
                uifeedback.errorMessage = validation.message
+     Otherwise
+          // Assing errro message
+          uifeedback.errorMessage = "SMTP flow not found"
