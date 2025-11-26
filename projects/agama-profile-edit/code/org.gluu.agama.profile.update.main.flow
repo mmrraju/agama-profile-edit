@@ -2,3 +2,4 @@ Flow org.gluu.agama.profile.update.main
      Basepath ""
 // Profile update flow starting
 Log "@info Profile update flow starting..."
+uifeedback = {}
