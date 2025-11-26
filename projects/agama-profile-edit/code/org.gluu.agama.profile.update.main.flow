@@ -3,3 +3,7 @@ Flow org.gluu.agama.profile.update.main
 // Profile update flow starting
 Log "@info Profile update flow starting..."
 uifeedback = {}
+// Max x time repeat
+Repeat 1 times max
+     // Trigger agama-smtp flow
+     Log "@info Trigger Agama-SMTP flow"
