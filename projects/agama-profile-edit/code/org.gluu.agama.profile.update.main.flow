@@ -37,5 +37,8 @@ Repeat 1 times max
                     // Show acknowledgement UI page for successful update
                     ack = RRF "acknowledgement.ftlh" 
                     // Finish successfully
-                    it_zqlcg = {success:true, data: { userId: user.uid}}
-                    Finish it_zqlcg
+                    it_vntsb = {success:true, data: { userId: user.uid}}
+                    Finish it_vntsb
+               Otherwise
+                    // show error page
+                    RRF "error.ftlh" E
