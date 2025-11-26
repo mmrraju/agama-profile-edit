@@ -29,4 +29,4 @@ Repeat 1 times max
           // If successfully validate
           When validation.valid is true
                // Update user profile
-               | E = Call userProfileEditService updateProfile userProfiles
+               updateProfile | E = Call userProfileEditService updateProfile userProfiles
