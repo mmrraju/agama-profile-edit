@@ -912,7 +912,8 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "show error message"
+					"comment": "show error message",
+					"arguments": "uifeedback.errorMessage"
 				}
 			},
 			"measured": {
@@ -1380,8 +1381,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1416,
-		"y": 107,
+		"x": -1529,
+		"y": 86,
 		"zoom": 1
 	}
 }
