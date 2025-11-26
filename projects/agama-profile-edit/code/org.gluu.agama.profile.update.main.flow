@@ -20,3 +20,5 @@ Repeat 1 times max
           userProfiles = RRF "profile.ftlh" 
           // create an instance of user profile update service
           userProfileEditService = Call org.gluu.agama.profile.service.UserProfileEditService#getInstance 
+          // Validate user profile inputs
+          validation = Call userProfileEditService validateInputs userProfiles
