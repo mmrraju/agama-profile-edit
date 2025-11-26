@@ -396,6 +396,46 @@
 				"height": 124
 			},
 			"selected": false
+		},
+		{
+			"id": "callNode-12d250b5-426a-4ef7-ac0d-53cad175791e",
+			"type": "callNode",
+			"position": {
+				"x": 2749,
+				"y": 536
+			},
+			"data": {
+				"id": "callNode-12d250b5-426a-4ef7-ac0d-53cad175791e",
+				"type": "callNode",
+				"position": {
+					"x": 2749,
+					"y": 536
+				},
+				"previousNodeId": "callNode-23928e70-75bb-40dc-a2be-67e7866d08f7",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "validateInputs",
+					"javaVariableName": "userProfileEditService",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"arguments": [
+						"userProfiles"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Validate user profile inputs",
+					"asssignedVariableName": "validation"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -588,11 +628,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_rrfNode-f88bfd4d-5e2c-41c2-a466-e871f56b9e97"
+		},
+		{
+			"id": "callNode-23928e70-75bb-40dc-a2be-67e7866d08f7-callNode-12d250b5-426a-4ef7-ac0d-53cad175791e",
+			"type": "default",
+			"source": "callNode-23928e70-75bb-40dc-a2be-67e7866d08f7",
+			"target": "callNode-12d250b5-426a-4ef7-ac0d-53cad175791e",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-23928e70-75bb-40dc-a2be-67e7866d08f7"
 		}
 	],
 	"viewport": {
-		"x": -2201,
-		"y": -328,
+		"x": -2336,
+		"y": -354,
 		"zoom": 1
 	}
 }
