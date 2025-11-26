@@ -613,7 +613,7 @@
 					"conditions": [
 						{
 							"variable": "updateProfile.empty",
-							"operator": "is",
+							"operator": "is not",
 							"dataValue": "true",
 							"combinator": "none"
 						}
@@ -631,7 +631,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "logNode-a9c65267-7512-4795-971f-7f5ad61a926d",
@@ -733,7 +733,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -1099,8 +1099,8 @@
 		}
 	],
 	"viewport": {
-		"x": -4231,
-		"y": -686,
+		"x": -3334,
+		"y": -424,
 		"zoom": 1
 	}
 }
