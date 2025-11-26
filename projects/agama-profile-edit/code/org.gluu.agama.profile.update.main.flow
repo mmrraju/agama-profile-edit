@@ -37,8 +37,8 @@ Repeat 1 times max
                     // Show acknowledgement UI page for successful update
                     ack = RRF "acknowledgement.ftlh" 
                     // Finish successfully
-                    it_kveey = {success:true, data: { userId: user.uid}}
-                    Finish it_kveey
+                    it_iqyoq = {success:true, data: { userId: user.uid}}
+                    Finish it_iqyoq
                Otherwise
                     // Assign error message
                     uifeedback.errorMessage = E
@@ -52,3 +52,5 @@ Repeat 1 times max
           uifeedback.errorMessage = "SMTP flow not found"
           // show error message
           RRF "error.ftlh" uifeedback.errorMessage
+// Maximum attempt reached
+Log "@info Maximum attempt reached"
