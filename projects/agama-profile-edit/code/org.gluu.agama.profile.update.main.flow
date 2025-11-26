@@ -10,3 +10,5 @@ Repeat 1 times max
      Log "@info Trigger Agama-SMTP flow"
      // Trigger smtp flow
      result = Trigger org.gluu.agama.smtp.main 
+     // Result from SMTP
+     Log "@info Result from SMTP "
