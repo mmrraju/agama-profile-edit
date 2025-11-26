@@ -303,7 +303,7 @@
 				"previousNodeId": "whenNode-af81fb93-1cf3-483d-988c-0d2e75c107d4",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "\"Result is true\"",
+					"logMessage": "\"Result is true for uid : % and mail : %\" result.uid result.mail",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -318,7 +318,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -550,7 +550,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -822,8 +822,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3209,
-		"y": -412,
+		"x": -1439,
+		"y": -203,
 		"zoom": 1
 	}
 }
