@@ -242,7 +242,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "whenNode-af81fb93-1cf3-483d-988c-0d2e75c107d4",
@@ -322,48 +322,10 @@
 			"dragging": false
 		},
 		{
-			"id": "rrfNode-f88bfd4d-5e2c-41c2-a466-e871f56b9e97",
-			"type": "rrfNode",
-			"position": {
-				"x": 2249,
-				"y": 536
-			},
-			"data": {
-				"id": "rrfNode-f88bfd4d-5e2c-41c2-a466-e871f56b9e97",
-				"type": "rrfNode",
-				"position": {
-					"x": 2249,
-					"y": 536
-				},
-				"previousNodeId": "logNode-88cb3e6b-0802-4c39-8dff-f8fa26a669df",
-				"agamaData": {
-					"assignments": [],
-					"nodeIcon": "ph:globe-simple",
-					"templatePath": "profile.ftlh",
-					"asssignedVariableName": "userProfiles",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": " Profile update form",
-					"arguments": [
-						""
-					]
-				}
-			},
-			"measured": {
-				"width": 170,
-				"height": 124
-			},
-			"selected": false,
-			"dragging": false
-		},
-		{
 			"id": "callNode-23928e70-75bb-40dc-a2be-67e7866d08f7",
 			"type": "callNode",
 			"position": {
-				"x": 2499,
+				"x": 2249,
 				"y": 536
 			},
 			"data": {
@@ -373,7 +335,7 @@
 					"x": 2499,
 					"y": 536
 				},
-				"previousNodeId": "rrfNode-f88bfd4d-5e2c-41c2-a466-e871f56b9e97",
+				"previousNodeId": "logNode-88cb3e6b-0802-4c39-8dff-f8fa26a669df",
 				"agamaData": {
 					"javaClassName": "org.gluu.agama.profile.service.UserProfileEditService",
 					"javaMethodName": "getInstance",
@@ -401,7 +363,7 @@
 			"id": "callNode-12d250b5-426a-4ef7-ac0d-53cad175791e",
 			"type": "callNode",
 			"position": {
-				"x": 2749,
+				"x": 2999,
 				"y": 536
 			},
 			"data": {
@@ -411,7 +373,7 @@
 					"x": 2749,
 					"y": 536
 				},
-				"previousNodeId": "callNode-23928e70-75bb-40dc-a2be-67e7866d08f7",
+				"previousNodeId": "rrfNode-07f8471a-6722-4962-9d6a-3dc15ae08544",
 				"agamaData": {
 					"javaClassName": "",
 					"javaMethodName": "validateInputs",
@@ -441,7 +403,7 @@
 			"id": "logNode-beaccadf-bdc7-4d05-ae9b-6ca6b406fdc2",
 			"type": "logNode",
 			"position": {
-				"x": 2999,
+				"x": 3249,
 				"y": 536
 			},
 			"data": {
@@ -474,7 +436,7 @@
 			"id": "whenNode-b5903210-2b86-41f6-bb67-86514a97d252",
 			"type": "whenNode",
 			"position": {
-				"x": 3249,
+				"x": 3499,
 				"y": 594
 			},
 			"data": {
@@ -513,10 +475,85 @@
 			"selected": false
 		},
 		{
+			"id": "callNode-8edeff52-db4a-40a9-86d8-2246516d259a",
+			"type": "callNode",
+			"position": {
+				"x": 2499,
+				"y": 536
+			},
+			"data": {
+				"id": "callNode-8edeff52-db4a-40a9-86d8-2246516d259a",
+				"type": "callNode",
+				"position": {
+					"x": 2499,
+					"y": 536
+				},
+				"previousNodeId": "callNode-23928e70-75bb-40dc-a2be-67e7866d08f7",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "getUserEntity",
+					"javaVariableName": "userProfileEditService",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"arguments": [
+						"result.data.uid"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Get User details",
+					"asssignedVariableName": "user"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": false
+		},
+		{
+			"id": "rrfNode-07f8471a-6722-4962-9d6a-3dc15ae08544",
+			"type": "rrfNode",
+			"position": {
+				"x": 2749,
+				"y": 536
+			},
+			"data": {
+				"id": "rrfNode-07f8471a-6722-4962-9d6a-3dc15ae08544",
+				"type": "rrfNode",
+				"position": {
+					"x": 2749,
+					"y": 536
+				},
+				"previousNodeId": "callNode-8edeff52-db4a-40a9-86d8-2246516d259a",
+				"agamaData": {
+					"assignments": [],
+					"nodeIcon": "ph:globe-simple",
+					"templatePath": "profile.ftlh",
+					"asssignedVariableName": "userProfiles",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Profile update form",
+					"arguments": "user"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": true
+		},
+		{
 			"id": "callNode-25a08356-3587-434d-9894-53cff86ef969",
 			"type": "callNode",
 			"position": {
-				"x": 3499,
+				"x": 3249,
 				"y": 794
 			},
 			"data": {
@@ -707,63 +744,6 @@
 			"sourceHandle": "source_whenNode-af81fb93-1cf3-483d-988c-0d2e75c107d4_success"
 		},
 		{
-			"id": "logNode-88cb3e6b-0802-4c39-8dff-f8fa26a669df-rrfNode-f88bfd4d-5e2c-41c2-a466-e871f56b9e97",
-			"type": "default",
-			"source": "logNode-88cb3e6b-0802-4c39-8dff-f8fa26a669df",
-			"target": "rrfNode-f88bfd4d-5e2c-41c2-a466-e871f56b9e97",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_logNode-88cb3e6b-0802-4c39-8dff-f8fa26a669df"
-		},
-		{
-			"id": "rrfNode-f88bfd4d-5e2c-41c2-a466-e871f56b9e97-callNode-23928e70-75bb-40dc-a2be-67e7866d08f7",
-			"type": "default",
-			"source": "rrfNode-f88bfd4d-5e2c-41c2-a466-e871f56b9e97",
-			"target": "callNode-23928e70-75bb-40dc-a2be-67e7866d08f7",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_rrfNode-f88bfd4d-5e2c-41c2-a466-e871f56b9e97"
-		},
-		{
-			"id": "callNode-23928e70-75bb-40dc-a2be-67e7866d08f7-callNode-12d250b5-426a-4ef7-ac0d-53cad175791e",
-			"type": "default",
-			"source": "callNode-23928e70-75bb-40dc-a2be-67e7866d08f7",
-			"target": "callNode-12d250b5-426a-4ef7-ac0d-53cad175791e",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_callNode-23928e70-75bb-40dc-a2be-67e7866d08f7"
-		},
-		{
 			"id": "callNode-12d250b5-426a-4ef7-ac0d-53cad175791e-logNode-beaccadf-bdc7-4d05-ae9b-6ca6b406fdc2",
 			"type": "default",
 			"source": "callNode-12d250b5-426a-4ef7-ac0d-53cad175791e",
@@ -819,11 +799,86 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-b5903210-2b86-41f6-bb67-86514a97d252_success"
+		},
+		{
+			"source": "logNode-88cb3e6b-0802-4c39-8dff-f8fa26a669df",
+			"sourceHandle": "source_logNode-88cb3e6b-0802-4c39-8dff-f8fa26a669df",
+			"target": "callNode-23928e70-75bb-40dc-a2be-67e7866d08f7",
+			"targetHandle": "target_callNode-23928e70-75bb-40dc-a2be-67e7866d08f7",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"id": "xy-edge__logNode-88cb3e6b-0802-4c39-8dff-f8fa26a669dfsource_logNode-88cb3e6b-0802-4c39-8dff-f8fa26a669df-callNode-23928e70-75bb-40dc-a2be-67e7866d08f7target_callNode-23928e70-75bb-40dc-a2be-67e7866d08f7"
+		},
+		{
+			"id": "callNode-23928e70-75bb-40dc-a2be-67e7866d08f7-callNode-8edeff52-db4a-40a9-86d8-2246516d259a",
+			"type": "default",
+			"source": "callNode-23928e70-75bb-40dc-a2be-67e7866d08f7",
+			"target": "callNode-8edeff52-db4a-40a9-86d8-2246516d259a",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-23928e70-75bb-40dc-a2be-67e7866d08f7"
+		},
+		{
+			"id": "callNode-8edeff52-db4a-40a9-86d8-2246516d259a-rrfNode-07f8471a-6722-4962-9d6a-3dc15ae08544",
+			"type": "default",
+			"source": "callNode-8edeff52-db4a-40a9-86d8-2246516d259a",
+			"target": "rrfNode-07f8471a-6722-4962-9d6a-3dc15ae08544",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-8edeff52-db4a-40a9-86d8-2246516d259a"
+		},
+		{
+			"id": "rrfNode-07f8471a-6722-4962-9d6a-3dc15ae08544-callNode-12d250b5-426a-4ef7-ac0d-53cad175791e",
+			"type": "default",
+			"source": "rrfNode-07f8471a-6722-4962-9d6a-3dc15ae08544",
+			"target": "callNode-12d250b5-426a-4ef7-ac0d-53cad175791e",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"sourceHandle": "source_rrfNode-07f8471a-6722-4962-9d6a-3dc15ae08544",
+			"targetHandle": "target_callNode-12d250b5-426a-4ef7-ac0d-53cad175791e"
 		}
 	],
 	"viewport": {
-		"x": -798,
-		"y": 43,
+		"x": -2427,
+		"y": -275,
 		"zoom": 1
 	}
 }
