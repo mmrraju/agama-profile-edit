@@ -105,7 +105,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "repeatNode-c97f70f7-eaec-4b9e-bcfe-b6fc53d27266",
@@ -200,7 +200,7 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Trigger smtp flow",
 					"overrides": [
 						{
 							"from": "/jans-auth/fl/hyyqd9/main.fls",
@@ -217,7 +217,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		}
 	],
 	"edges": [
@@ -318,8 +318,8 @@
 		}
 	],
 	"viewport": {
-		"x": -123,
-		"y": 20,
+		"x": -444,
+		"y": -31,
 		"zoom": 1
 	}
 }
