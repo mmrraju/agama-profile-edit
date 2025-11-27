@@ -19,11 +19,13 @@
 				"agamaData": {
 					"isTopLevelFlow": true,
 					"basepath": "",
-					"configParams": "{}",
+					"configParams": {
+						"test": "test1"
+					},
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
 					"inputs": "",
-					"configs": "",
+					"configs": "conf",
 					"flowname": "org.gluu.agama.profile.edit",
 					"displayName": "Profile Edit",
 					"creationDate": "11/06/2025",
@@ -35,7 +37,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "logNode-d3e74e0b-b984-4366-a8bf-8b5b496def79",
@@ -1044,7 +1046,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -1563,8 +1565,8 @@
 		}
 	],
 	"viewport": {
-		"x": 22.07626954950956,
-		"y": 42.889720516922125,
-		"zoom": 0.8467453123625271
+		"x": 0,
+		"y": 0,
+		"zoom": 1
 	}
 }
