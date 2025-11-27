@@ -1,5 +1,6 @@
 Flow org.gluu.agama.profile.edit
      Basepath ""
+     Configs conf
 // Profile edit flow starting
 Log "@info Profile edit flow starting..."
 // Create  variable for UI feedback
@@ -46,8 +47,8 @@ Repeat 6 times max
                               // Profile update successful
                               Log "@info Profile update successfully"
                               // Finish successfully
-                              it_wxjzq = {success:true, data: { userId: user.inum}}
-                              Finish it_wxjzq
+                              it_azwuq = {success:true, data: { userId: user.inum}}
+                              Finish it_azwuq
                          Otherwise
                               // Validate message
                               profileUpdateFeedback.errorMessage = validation.message
