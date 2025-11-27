@@ -24,7 +24,7 @@
 					},
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
-					"inputs": "",
+					"inputs": "client_ip",
 					"configs": "conf",
 					"flowname": "org.gluu.agama.profile.update.main",
 					"displayName": "Profile upate",
