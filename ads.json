@@ -18,9 +18,7 @@
         "configs": {
             "": {},
             "org.gluu.agama.profile.edit.root": {},
-            "org.gluu.agama.profile.edit": {
-                "test": "test1"
-            },
+            "org.gluu.agama.profile.edit": {},
             "org.gluu.agama.profile.update.main": {},
             "code": {},
             "web": {}
