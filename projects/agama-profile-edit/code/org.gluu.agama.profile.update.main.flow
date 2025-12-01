@@ -12,14 +12,14 @@ result = Trigger org.gluu.agama.smtp.main
 Log "@info Result from SMTP : %  " result
 // if result is true
 When result.success is true
-     // Max repeate x times
+     // Result is True
+     Log "@info Result is true for uid : %" result.data.uid
+     // create an instance of user profile update service
+     userProfileEditService = Call org.gluu.agama.profile.service.UserProfileEditService#getInstance 
+     // Get User details
+     user = Call userProfileEditService getUserEntity result.data.uid
+     // Max Repeate x times
      Repeat 3 times max
-          // Result is True
-          Log "@info Result is true for uid : %" result.data.uid
-          // create an instance of user profile update service
-          userProfileEditService = Call org.gluu.agama.profile.service.UserProfileEditService#getInstance 
-          // Get User details
-          user = Call userProfileEditService getUserEntity result.data.uid
           // Profile update form
           userProfiles = RRF "profile.ftlh" user
           // Validate user profile inputs
@@ -37,8 +37,8 @@ When result.success is true
                     // Show acknowledgement UI page for successful update
                     ack = RRF "acknowledgement.ftlh" 
                     // Finish successfully
-                    it_ghidr = {success:true, data: { userId: user.uid}}
-                    Finish it_ghidr
+                    it_ohujt = {success:true, data: { userId: user.uid}}
+                    Finish it_ohujt
                Otherwise
                     // Assign error message
                     uifeedback.errorMessage = E
