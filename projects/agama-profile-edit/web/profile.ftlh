@@ -47,14 +47,6 @@
 			<label class="form-label">Last Name: <span class="required">*</span></label>
 			<input type="text" id="lastName" name="lastName" placeholder="Enter your last name" value="${sn}" class="form-control">
 		  </div>
-		  <!-- 
-<div class="form-group">
-<label class="form-label">Status:</label>
-<input type="checkbox" id="jansStatus" name="jansStatus" 
-${jansStatus ? "checked" : ""}>
-<label for="jansStatus">Active</label>
-</div>
--->
 		  <div class="form-group">
 			<label class="form-label">Gender:</label>
 			<input type="text" id="gender" name="gender" placeholder="Enter gender" value="${gender}" class="form-control">
@@ -63,14 +55,6 @@ ${jansStatus ? "checked" : ""}>
 			<label class="form-label">Email: <span class="required">*</span></label>
 			<input type="email" id="email" name="mail" placeholder="Enter your email" value="${mail}" class="form-control">
 		  </div>
-		  <!--
-<div class="form-group">
-<label class="form-label">Password:</label>
-<input type="password" id="password" name="userPassword" 
-class="form-control" 
-placeholder="Enter new password">
-</div>
--->
 		  <div class="buttons">
 			<button type="submit" class="btn btn-primary">Update</button>
 			<button type="reset" id="cancel" name="cancel" value="cancel" class="btn btn-secondary">Reset</button>
