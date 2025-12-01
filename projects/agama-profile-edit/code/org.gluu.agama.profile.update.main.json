@@ -19,11 +19,13 @@
 				"agamaData": {
 					"isTopLevelFlow": true,
 					"basepath": "",
-					"configParams": {},
+					"configParams": {
+						"test": "test_one"
+					},
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
 					"inputs": "",
-					"configs": "",
+					"configs": "conf",
 					"flowname": "org.gluu.agama.profile.update.main",
 					"displayName": "Profile upate",
 					"creationDate": "26/11/2025",
@@ -1488,8 +1490,8 @@
 		}
 	],
 	"viewport": {
-		"x": 0,
-		"y": 0,
+		"x": 249,
+		"y": 32,
 		"zoom": 1
 	}
 }
