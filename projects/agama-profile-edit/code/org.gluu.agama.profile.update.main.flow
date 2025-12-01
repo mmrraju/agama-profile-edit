@@ -29,7 +29,7 @@ Repeat 1 times max
           // If successfully validate
           When validation.valid is true
                // Update user profile
-               updateProfile | E = Call userProfileEditService updateProfile userProfiles
+               updateProfile | E = Call userProfileEditService updateProfile userProfiles result.data.uid
                //  Profile update success or not
                When updateProfile.empty is not true
                     // Profile  successfully updated
@@ -37,8 +37,8 @@ Repeat 1 times max
                     // Show acknowledgement UI page for successful update
                     ack = RRF "acknowledgement.ftlh" 
                     // Finish successfully
-                    it_qakot = {success:true, data: { userId: user.uid}}
-                    Finish it_qakot
+                    it_hhtnj = {success:true, data: { userId: user.uid}}
+                    Finish it_hhtnj
                Otherwise
                     // Assign error message
                     uifeedback.errorMessage = E
@@ -55,5 +55,5 @@ Repeat 1 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // Flow finished with error 
-it_cewqw = {success:false, error: "You've cross your max attempt limit"}
-Finish it_cewqw
+it_hhmdb = {success:false, error: "You've cross your max attempt limit"}
+Finish it_hhmdb
