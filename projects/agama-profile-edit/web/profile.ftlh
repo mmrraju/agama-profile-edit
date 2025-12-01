@@ -45,7 +45,7 @@
 		  </div>
 		  <div class="form-group">
 			<label class="form-label">Last Name: <span class="required">*</span></label>
-			<input type="text" id="lastName" name="lastName" placeholder="Enter your last name" value="${sn!}" class="form-control">
+			<input type="text" id="lastName" name="sn" placeholder="Enter your last name" value="${sn!}" class="form-control">
 		  </div>
 		  <div class="form-group">
 			<label class="form-label">Gender:</label>
