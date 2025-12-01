@@ -100,10 +100,10 @@ public class UserProfileEditServiceImpl extends UserProfileEditService{
     }
 
     @Override
-    public String updateProfile(Map<String, String> profile, String email) {
+    public String updateProfile(Map<String, String> profile, String userId) {
 
-        Set<String> attributes = new HashSet<>(Arrays.asList(FIRST_NAME, MIDDLE_NAME, DISPLAY_NAME, LAST_NAME, MAIL, JANS_STATUS, GENDER ));
-        User user = getUser(MAIL, email);
+        Set<String> attributes = new HashSet<>(Arrays.asList(FIRST_NAME, MIDDLE_NAME, DISPLAY_NAME, LAST_NAME, MAIL, JANS_STATUS, GENDER, JANS_STATUS));
+        User user = getUser(UID, userId);
         attributes.forEach(attr -> {
             String val = profile.get(attr);
             if (StringHelper.isNotEmpty(val)) {
