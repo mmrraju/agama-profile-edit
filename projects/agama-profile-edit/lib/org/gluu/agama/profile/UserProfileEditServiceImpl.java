@@ -57,6 +57,7 @@ public class UserProfileEditServiceImpl extends UserProfileEditService{
             String displayName = getSingleValuedAttr(user, DISPLAY_NAME);
             String lastName = getSingleValuedAttr(user, LAST_NAME);
             String middleName = getSingleValuedAttr(user, MIDDLE_NAME);
+            String gender = getSingleValuedAttr(user, GENDER)
             // Creating a truly modifiable map
             userMap.put(UID, userId);
             userMap.put(INUM_ATTR, inum);
@@ -65,6 +66,7 @@ public class UserProfileEditServiceImpl extends UserProfileEditService{
             userMap.put(MIDDLE_NAME, middleName);
             userMap.put(LAST_NAME, lastName);
             userMap.put(DISPLAY_NAME, displayName);
+            userMap.put(GENDER, gender);
     
             return userMap;
         }else{
@@ -102,7 +104,7 @@ public class UserProfileEditServiceImpl extends UserProfileEditService{
     @Override
     public String updateProfile(Map<String, String> profile, String userId) {
 
-        Set<String> attributes = new HashSet<>(Arrays.asList(FIRST_NAME, MIDDLE_NAME, DISPLAY_NAME, LAST_NAME, MAIL, JANS_STATUS, GENDER, JANS_STATUS));
+        Set<String> attributes = new HashSet<>(Arrays.asList(FIRST_NAME, MIDDLE_NAME, DISPLAY_NAME, LAST_NAME, JANS_STATUS, GENDER, MAIL, PASSWORD));
         User user = getUser(UID, userId);
         attributes.forEach(attr -> {
             String val = profile.get(attr);
