@@ -541,7 +541,7 @@
 					"displayName": "",
 					"hasComment": true,
 					"comment": "Profile update form",
-					"arguments": "user uifeedback"
+					"arguments": "user"
 				}
 			},
 			"measured": {
@@ -1489,8 +1489,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2464,
-		"y": -271,
+		"x": -2342,
+		"y": -273,
 		"zoom": 1
 	}
 }
