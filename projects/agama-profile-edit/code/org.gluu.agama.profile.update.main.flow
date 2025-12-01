@@ -37,8 +37,8 @@ When result.success is true
                     // Show acknowledgement UI page for successful update
                     ack = RRF "acknowledgement.ftlh" 
                     // Finish successfully
-                    it_ohujt = {success:true, data: { userId: user.uid}}
-                    Finish it_ohujt
+                    it_rdsne = {success:true, data: { userId: user.uid}}
+                    Finish it_rdsne
                Otherwise
                     // Assign error message
                     uifeedback.errorMessage = E
@@ -48,6 +48,11 @@ When result.success is true
                // Assign profile validation error message
                uifeedback.errorMessage = validation.message
                user.errorMessage = validation.message
+     // Maximum attempt reached
+     Log "@info Maximum attempt reached"
+     // Flow finished with error 
+     it_wydqx = {success:false, error: "You've cross your max attempt limit"}
+     Finish it_wydqx
 Otherwise
      // Assing errro message
      uifeedback.errorMessage = "SMTP flow not found"
