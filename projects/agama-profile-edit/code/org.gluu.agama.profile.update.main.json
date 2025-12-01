@@ -548,7 +548,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "callNode-25a08356-3587-434d-9894-53cff86ef969",
@@ -833,6 +833,11 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "validation.message",
 							"assignedVariableName": "uifeedback.errorMessage"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "validation.message",
+							"assignedVariableName": "user.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -848,7 +853,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-1d730c1c-eecc-425b-8d6c-958862988edc",
@@ -1489,8 +1494,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2342,
-		"y": -273,
+		"x": -2911,
+		"y": -217,
 		"zoom": 1
 	}
 }
