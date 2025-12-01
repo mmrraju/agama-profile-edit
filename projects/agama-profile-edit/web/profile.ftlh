@@ -33,27 +33,27 @@
 		<form method="post" enctype="application/x-www-form-urlencoded" id="profileForm">
 		  <div class="form-group">
 			<label class="form-label">First Name: <span class="required">*</span></label>
-			<input type="text" id="firstName" name="firstName" placeholder="Enter your first name" value="${givenName}" class="form-control">
+			<input type="text" id="firstName" name="firstName" placeholder="Enter your first name" value="${givenName!}" class="form-control">
 		  </div>
 		  <div class="form-group">
 			<label class="form-label">Middle Name:</label>
-			<input type="text" id="middleName" name="middleName" placeholder="Enter your middle name" value="${middleName}" class="form-control">
+			<input type="text" id="middleName" name="middleName" placeholder="Enter your middle name" value="${middleName!}" class="form-control">
 		  </div>
 		  <div class="form-group">
 			<label class="form-label">Display Name: <span class="required">*</span></label>
-			<input type="text" id="displayName" name="displayName" placeholder="Enter your display name" value="${displayName}" class="form-control">
+			<input type="text" id="displayName" name="displayName" placeholder="Enter your display name" value="${displayName!}" class="form-control">
 		  </div>
 		  <div class="form-group">
 			<label class="form-label">Last Name: <span class="required">*</span></label>
-			<input type="text" id="lastName" name="lastName" placeholder="Enter your last name" value="${sn}" class="form-control">
+			<input type="text" id="lastName" name="lastName" placeholder="Enter your last name" value="${sn!}" class="form-control">
 		  </div>
 		  <div class="form-group">
 			<label class="form-label">Gender:</label>
-			<input type="text" id="gender" name="gender" placeholder="Enter gender" value="${gender}" class="form-control">
+			<input type="text" id="gender" name="gender" placeholder="Enter gender" value="${gender!}" class="form-control">
 		  </div>
 		  <div class="form-group">
 			<label class="form-label">Email: <span class="required">*</span></label>
-			<input type="email" id="email" name="mail" placeholder="Enter your email" value="${mail}" class="form-control">
+			<input type="email" id="email" name="mail" placeholder="Enter your email" value="${mail!}" class="form-control">
 		  </div>
 		  <div class="buttons">
 			<button type="submit" class="btn btn-primary">Update</button>
