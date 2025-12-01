@@ -33,7 +33,7 @@
 		<form method="post" enctype="application/x-www-form-urlencoded" id="profileForm">
 		  <div class="form-group">
 			<label class="form-label">First Name: <span class="required">*</span></label>
-			<input type="text" id="firstName" name="firstName" placeholder="Enter your first name" value="${givenName!}" class="form-control">
+			<input type="text" id="firstName" name="givenName" placeholder="Enter your first name" value="${givenName!}" class="form-control">
 		  </div>
 		  <div class="form-group">
 			<label class="form-label">Middle Name:</label>
