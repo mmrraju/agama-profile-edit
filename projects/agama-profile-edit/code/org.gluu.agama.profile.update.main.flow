@@ -37,13 +37,13 @@ Repeat 1 times max
                     // Show acknowledgement UI page for successful update
                     ack = RRF "acknowledgement.ftlh" 
                     // Finish successfully
-                    it_hhtnj = {success:true, data: { userId: user.uid}}
-                    Finish it_hhtnj
+                    it_xhkae = {success:true, data: { userId: user.uid}}
+                    Finish it_xhkae
                Otherwise
                     // Assign error message
                     uifeedback.errorMessage = E
                     // show error page
-                    RRF "error.ftlh" E
+                    RRF "error.ftlh" uifeedback
           Otherwise
                // Assign profile validation error message
                uifeedback.errorMessage = validation.message
@@ -55,5 +55,5 @@ Repeat 1 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // Flow finished with error 
-it_hhmdb = {success:false, error: "You've cross your max attempt limit"}
-Finish it_hhmdb
+it_kontv = {success:false, error: "You've cross your max attempt limit"}
+Finish it_kontv
