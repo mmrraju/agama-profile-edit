@@ -516,7 +516,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -902,8 +902,8 @@
 			"id": "logNode-da6f5303-46b4-482a-bf4e-fbd4e4707ea4",
 			"type": "logNode",
 			"position": {
-				"x": 780,
-				"y": 30
+				"x": 2764.067671201612,
+				"y": 254.38860567161083
 			},
 			"data": {
 				"id": "logNode-da6f5303-46b4-482a-bf4e-fbd4e4707ea4",
@@ -912,7 +912,7 @@
 					"x": 1030,
 					"y": 30
 				},
-				"previousNodeId": "repeatNode-c97f70f7-eaec-4b9e-bcfe-b6fc53d27266",
+				"previousNodeId": "repeatNode-f3129dfd-15bb-4f9d-a77f-7e55b3f0c507",
 				"branching": "continue",
 				"agamaData": {
 					"logMessage": "\"Maximum attempt reached\"",
@@ -930,7 +930,8 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "repeatNode-f3129dfd-15bb-4f9d-a77f-7e55b3f0c507",
@@ -969,8 +970,8 @@
 			"id": "finishNode-de9a3f7c-6a83-4a84-aabc-73baf437bebc",
 			"type": "finishNode",
 			"position": {
-				"x": 1030,
-				"y": 30
+				"x": 2994.283737496375,
+				"y": 253.20761301018126
 			},
 			"data": {
 				"id": "finishNode-de9a3f7c-6a83-4a84-aabc-73baf437bebc",
@@ -997,7 +998,8 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -1471,11 +1473,29 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__repeatNode-f3129dfd-15bb-4f9d-a77f-7e55b3f0c507source_repeatNode-f3129dfd-15bb-4f9d-a77f-7e55b3f0c507_repeat-rrfNode-07f8471a-6722-4962-9d6a-3dc15ae08544target_rrfNode-07f8471a-6722-4962-9d6a-3dc15ae08544"
+		},
+		{
+			"source": "repeatNode-f3129dfd-15bb-4f9d-a77f-7e55b3f0c507",
+			"sourceHandle": "source_repeatNode-f3129dfd-15bb-4f9d-a77f-7e55b3f0c507_continue",
+			"target": "logNode-da6f5303-46b4-482a-bf4e-fbd4e4707ea4",
+			"targetHandle": "target_logNode-da6f5303-46b4-482a-bf4e-fbd4e4707ea4",
+			"label": "continue",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"id": "xy-edge__repeatNode-f3129dfd-15bb-4f9d-a77f-7e55b3f0c507source_repeatNode-f3129dfd-15bb-4f9d-a77f-7e55b3f0c507_continue-logNode-da6f5303-46b4-482a-bf4e-fbd4e4707ea4target_logNode-da6f5303-46b4-482a-bf4e-fbd4e4707ea4"
 		}
 	],
 	"viewport": {
-		"x": -1667.1832914078377,
-		"y": -186.83817000616568,
+		"x": -1600.4313382828377,
+		"y": -150.83817000616568,
 		"zoom": 0.846745312362527
 	}
 }
