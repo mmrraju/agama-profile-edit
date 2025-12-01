@@ -1,5 +1,6 @@
 Flow org.gluu.agama.profile.update.main
      Basepath ""
+     Configs conf
 // Profile update flow starting
 Log "@info Profile update flow starting..."
 // Assign veriable
@@ -37,8 +38,8 @@ Repeat 1 times max
                     // Show acknowledgement UI page for successful update
                     ack = RRF "acknowledgement.ftlh" 
                     // Finish successfully
-                    it_wrojp = {success:true, data: { userId: user.uid}}
-                    Finish it_wrojp
+                    it_jexye = {success:true, data: { userId: user.uid}}
+                    Finish it_jexye
                Otherwise
                     // Assign error message
                     uifeedback.errorMessage = E
@@ -55,5 +56,5 @@ Repeat 1 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // Flow finished with error 
-it_orues = {success:false, error: "You've cross your max attempt limit"}
-Finish it_orues
+it_acpxe = {success:false, error: "You've cross your max attempt limit"}
+Finish it_acpxe
