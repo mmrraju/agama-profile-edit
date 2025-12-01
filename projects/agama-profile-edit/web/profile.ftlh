@@ -51,13 +51,14 @@
             <label class="form-label">Last Name: <span class="required">*</span></label>
             <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Enter your last name" value="${sn}">
         </div>
-
+        <!-- 
         <div class="form-group">
             <label class="form-label">Status:</label>
-            <input type="checkbox" id="jansStatus" name="jansStatus" ${jansstatus="" ?="" "checked"="" :="" ""}="">
+            <input type="checkbox" id="jansStatus" name="jansStatus" 
+                ${jansStatus ? "checked" : ""}>
             <label for="jansStatus">Active</label>
         </div>
-
+        -->
         <div class="form-group">
             <label class="form-label">Gender:</label>
             <input type="text" id="gender" name="gender" class="form-control" placeholder="Enter gender" value="${gender}">
