@@ -67,12 +67,14 @@
             <label class="form-label">Email: <span class="required">*</span></label>
             <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" value="${mail}">
         </div>
-
+        <!--
         <div class="form-group">
             <label class="form-label">Password:</label>
-            <input type="password" id="password" name="userPassword" class="form-control" placeholder="Enter new password">
+            <input type="password" id="password" name="userPassword" 
+                class="form-control" 
+                placeholder="Enter new password">
         </div>
-
+        -->
         <div class="buttons">
             <button type="submit" class="btn btn-primary">Update</button>
             <button type="reset" id="cancel" name="cancel" value="cancel" class="btn btn-secondary">Reset</button>
