@@ -30,58 +30,52 @@
 	  <div class="content">
 		<p class="text-center">To update your profile, please enter your details below.
 		</p>
-        <form method="post" enctype="application/x-www-form-urlencoded" id="profileForm">
-
-        <div class="form-group">
-            <label class="form-label">First Name: <span class="required">*</span></label>
-            <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Enter your first name" value="${givenName}">
-        </div>
-
-        <div class="form-group">
-            <label class="form-label">Middle Name:</label>
-            <input type="text" id="middleName" name="middleName" class="form-control" placeholder="Enter your middle name" value="${middleName}">
-        </div>
-
-        <div class="form-group">
-            <label class="form-label">Display Name: <span class="required">*</span></label>
-            <input type="text" id="displayName" name="displayName" class="form-control" placeholder="Enter your display name" value="${displayName}">
-        </div>
-
-        <div class="form-group">
-            <label class="form-label">Last Name: <span class="required">*</span></label>
-            <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Enter your last name" value="${sn}">
-        </div>
-        <!-- 
-        <div class="form-group">
-            <label class="form-label">Status:</label>
-            <input type="checkbox" id="jansStatus" name="jansStatus" 
-                ${jansStatus ? "checked" : ""}>
-            <label for="jansStatus">Active</label>
-        </div>
-        -->
-        <div class="form-group">
-            <label class="form-label">Gender:</label>
-            <input type="text" id="gender" name="gender" class="form-control" placeholder="Enter gender" value="${gender}">
-        </div>
-
-        <div class="form-group">
-            <label class="form-label">Email: <span class="required">*</span></label>
-            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" value="${mail}">
-        </div>
-        <!--
-        <div class="form-group">
-            <label class="form-label">Password:</label>
-            <input type="password" id="password" name="userPassword" 
-                class="form-control" 
-                placeholder="Enter new password">
-        </div>
-        -->
-        <div class="buttons">
-            <button type="submit" class="btn btn-primary">Update</button>
-            <button type="reset" id="cancel" name="cancel" value="cancel" class="btn btn-secondary">Reset</button>
-        </div>
-
-        </form>
+		<form method="post" enctype="application/x-www-form-urlencoded" id="profileForm">
+		  <div class="form-group">
+			<label class="form-label">First Name: <span class="required">*</span></label>
+			<input type="text" id="firstName" name="firstName" placeholder="Enter your first name" value="${givenName}" class="form-control">
+		  </div>
+		  <div class="form-group">
+			<label class="form-label">Middle Name:</label>
+			<input type="text" id="middleName" name="middleName" placeholder="Enter your middle name" value="${middleName}" class="form-control">
+		  </div>
+		  <div class="form-group">
+			<label class="form-label">Display Name: <span class="required">*</span></label>
+			<input type="text" id="displayName" name="displayName" placeholder="Enter your display name" value="${displayName}" class="form-control">
+		  </div>
+		  <div class="form-group">
+			<label class="form-label">Last Name: <span class="required">*</span></label>
+			<input type="text" id="lastName" name="lastName" placeholder="Enter your last name" value="${sn}" class="form-control">
+		  </div>
+		  <!-- 
+<div class="form-group">
+<label class="form-label">Status:</label>
+<input type="checkbox" id="jansStatus" name="jansStatus" 
+${jansStatus ? "checked" : ""}>
+<label for="jansStatus">Active</label>
+</div>
+-->
+		  <div class="form-group">
+			<label class="form-label">Gender:</label>
+			<input type="text" id="gender" name="gender" placeholder="Enter gender" value="${gender}" class="form-control">
+		  </div>
+		  <div class="form-group">
+			<label class="form-label">Email: <span class="required">*</span></label>
+			<input type="email" id="email" name="mail" placeholder="Enter your email" value="${mail}" class="form-control">
+		  </div>
+		  <!--
+<div class="form-group">
+<label class="form-label">Password:</label>
+<input type="password" id="password" name="userPassword" 
+class="form-control" 
+placeholder="Enter new password">
+</div>
+-->
+		  <div class="buttons">
+			<button type="submit" class="btn btn-primary">Update</button>
+			<button type="reset" id="cancel" name="cancel" value="cancel" class="btn btn-secondary">Reset</button>
+		  </div>
+		</form>
 	  </div>
 	</div>
   
