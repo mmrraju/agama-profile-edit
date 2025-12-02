@@ -1,4 +1,4 @@
-<p align="center"><img src="logo.png" alt="Agama-Profile-Edit logo" style="height: 500px; width:500px;"/></p>
+<p align="left"><img src="logo.jpeg" alt="Agama-Profile-Edit logo" style="height: 500px; width:700px;"/></p>
 
 
 <!-- These are statistics for this repository-->
@@ -99,8 +99,6 @@ In step one, the person enters their email address, to which the IDP sends an OT
 After OTP verification, if the email is recognized, the user is shown a profile update form. Upon submission, the system updates the user’s profile (if validation succeeds) and then completes the flow with an acknowledgment message
 If the email address is new, the IDP displays a registration form.
 
-
-## Demo
 
 
 <!-- This are stats url reference for this repository -->
