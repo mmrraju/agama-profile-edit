@@ -19,7 +19,8 @@
             "": {},
             "org.gluu.agama.profile.update.main": {},
             "code": {},
-            "web": {}
+            "web": {},
+            "org.test": {}
         },
         "name": "agama-profile-edit"
     }
