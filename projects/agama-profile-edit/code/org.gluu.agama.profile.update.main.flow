@@ -8,7 +8,7 @@ uifeedback = {}
 Log "@info Trigger Agama-SMTP flow"
 // Trigger smtp flow
 result = Trigger org.gluu.agama.smtp.main 
-     Override templates "/jans-auth/fl/hyyqd9/main.fls" "main.fls" 
+     Override templates "/main.flth" "main.ftlh" 
 // Result from SMTP
 Log "@info Result from SMTP : %  " result
 // if result is true
@@ -38,8 +38,8 @@ When result.success is true
                     // Show acknowledgement UI page for successful update
                     ack = RRF "acknowledgement.ftlh" 
                     // Finish successfully
-                    it_deekw = {success:true, data: { userId: user.uid}}
-                    Finish it_deekw
+                    it_nirva = {success:true, data: { userId: user.uid}}
+                    Finish it_nirva
                Otherwise
                     // Assign error message
                     uifeedback.errorMessage = E
@@ -52,8 +52,8 @@ When result.success is true
      // Maximum attempt reached
      Log "@info Maximum attempt reached"
      // Flow finished with error 
-     it_cnsfh = {success:false, error: "You've cross your max attempt limit"}
-     Finish it_cnsfh
+     it_opgkh = {success:false, error: "You've cross your max attempt limit"}
+     Finish it_opgkh
 Otherwise
      // Assing errro message
      uifeedback.errorMessage = "SMTP flow not found"
