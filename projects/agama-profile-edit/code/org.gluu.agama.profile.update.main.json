@@ -172,7 +172,7 @@
 					"overrides": [
 						{
 							"from": "/main.flth",
-							"to": "main.ftlh"
+							"to": "/myproject/main.ftlh"
 						}
 					]
 				}
