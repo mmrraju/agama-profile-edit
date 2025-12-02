@@ -171,8 +171,8 @@
 					"comment": "Trigger smtp flow",
 					"overrides": [
 						{
-							"from": "/main.flth",
-							"to": "/myproject/main.ftlh"
+							"from": "main.fls",
+							"to": "/myproject/main.fls"
 						}
 					]
 				}
@@ -1499,8 +1499,8 @@
 		}
 	],
 	"viewport": {
-		"x": -575,
-		"y": -46,
+		"x": -363,
+		"y": -30,
 		"zoom": 1
 	}
 }
