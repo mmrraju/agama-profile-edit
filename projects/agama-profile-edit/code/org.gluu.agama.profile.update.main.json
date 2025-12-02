@@ -171,8 +171,8 @@
 					"comment": "Trigger smtp flow",
 					"overrides": [
 						{
-							"from": "main.fls",
-							"to": "/myproject/main.fls"
+							"from": "hyyqd9/main.fls",
+							"to": "myproject/main.fls"
 						}
 					]
 				}
