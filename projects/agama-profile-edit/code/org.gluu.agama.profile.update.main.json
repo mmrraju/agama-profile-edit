@@ -35,7 +35,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-9e0dbc2d-c5eb-4cc7-9858-d805bb67bbda",
@@ -169,14 +169,19 @@
 					"displayName": "",
 					"hasComment": true,
 					"comment": "Trigger smtp flow",
-					"overrides": []
+					"overrides": [
+						{
+							"from": "\"/jans-auth/fl/hyyqd9/main.fls\"",
+							"to": "\"main.fls\""
+						}
+					]
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1494,8 +1499,8 @@
 		}
 	],
 	"viewport": {
-		"x": 0,
-		"y": 0,
+		"x": -575,
+		"y": -46,
 		"zoom": 1
 	}
 }
