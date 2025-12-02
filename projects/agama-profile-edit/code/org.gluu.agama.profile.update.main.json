@@ -172,7 +172,7 @@
 					"overrides": [
 						{
 							"from": "hyyqd9/main.fls",
-							"to": "myproject/main.fls"
+							"to": "main.fls"
 						}
 					]
 				}
@@ -1499,7 +1499,7 @@
 		}
 	],
 	"viewport": {
-		"x": -363,
+		"x": -320,
 		"y": -30,
 		"zoom": 1
 	}
