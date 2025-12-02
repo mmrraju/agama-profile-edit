@@ -172,7 +172,7 @@
 					"overrides": [
 						{
 							"from": "hyyqd9/main.ftlh",
-							"to": "myproject/main.ftlh"
+							"to": "ftl/main.ftlh"
 						}
 					]
 				}
@@ -1499,8 +1499,8 @@
 		}
 	],
 	"viewport": {
-		"x": -447.3679526115677,
-		"y": -45.74479224026163,
-		"zoom": 0.9901113044010454
+		"x": 0,
+		"y": 0,
+		"zoom": 1
 	}
 }
