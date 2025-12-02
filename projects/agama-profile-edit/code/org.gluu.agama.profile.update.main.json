@@ -35,7 +35,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "logNode-9e0dbc2d-c5eb-4cc7-9858-d805bb67bbda",
@@ -998,7 +998,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		}
 	],
@@ -1494,8 +1494,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1600.4313382828377,
-		"y": -150.83817000616568,
-		"zoom": 0.846745312362527
+		"x": 0,
+		"y": 0,
+		"zoom": 1
 	}
 }
