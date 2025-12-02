@@ -37,8 +37,8 @@ When result.success is true
                     // Show acknowledgement UI page for successful update
                     ack = RRF "acknowledgement.ftlh" 
                     // Finish successfully
-                    it_kttrc = {success:true, data: { userId: user.uid}}
-                    Finish it_kttrc
+                    it_akddf = {success:true, data: { userId: user.uid}}
+                    Finish it_akddf
                Otherwise
                     // Assign error message
                     uifeedback.errorMessage = E
@@ -51,8 +51,8 @@ When result.success is true
      // Maximum attempt reached
      Log "@info Maximum attempt reached"
      // Flow finished with error 
-     it_cbgjg = {success:false, error: "You've cross your max attempt limit"}
-     Finish it_cbgjg
+     it_mbiqh = {success:false, error: "You've cross your max attempt limit"}
+     Finish it_mbiqh
 Otherwise
      // Assing errro message
      uifeedback.errorMessage = "SMTP flow not found"
