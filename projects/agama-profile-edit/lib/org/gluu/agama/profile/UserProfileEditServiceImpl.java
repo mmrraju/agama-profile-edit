@@ -82,7 +82,7 @@ public class UserProfileEditServiceImpl extends UserProfileEditService{
         Map<String, Object> result = new HashMap<>();
         if (StringHelper.isEmpty(profile.get(FIRST_NAME))) {
             result.put("valid", false);
-            result.put("message", "Given name not provided");
+            result.put("message", "First name not provided");
             return result;
         }
         if (StringHelper.isEmpty(profile.get(DISPLAY_NAME))) {
