@@ -172,7 +172,7 @@
 					"overrides": [
 						{
 							"from": "hyyqd9/main.ftlh",
-							"to": "ftl/main.ftlh"
+							"to": "/opt/jans/jetty/jans-auth/agama/mypath/main.ftlh"
 						}
 					]
 				}
