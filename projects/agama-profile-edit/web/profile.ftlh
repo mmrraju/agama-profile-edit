@@ -53,7 +53,7 @@
 		  </div>
 		  <div class="form-group">
 			<label class="form-label">Email: <span class="required">*</span></label>
-			<input type="email" id="email" name="mail" placeholder="Enter your email" value="${mail!}" class="form-control" required="">
+			<input type="email" id="mail" name="mail" placeholder="Enter your email" value="${mail!}" required="" class="form-control">
 		  </div>
 		  <div class="buttons">
 			<button type="submit" class="btn btn-primary">Update</button>
