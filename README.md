@@ -10,7 +10,7 @@
 
 # About Agama-Profile-Edit Project
 
-This repo is the home of the Gluu Agama-profile-edit project. This Agama project allows users to update their profile after email-based authentication. For email-based authentication, we have a community project called Agama-SMTP. Here, we use the Agama-SMTP project as an example of reusing a community project and applying template overriding.
+This repo is the home of the Gluu Agama-profile-edit project. This Agama project allows users to update their profile after email-based authentication. For email-based authentication, we have a community project called [Agama-SMTP](https://github.com/GluuFederation/agama-smtp). Here, we use the [Agama-SMTP](https://github.com/GluuFederation/agama-smtp) project as an example of reusing a community project and applying [template overriding](https://docs.jans.io/head/janssen-server/developer/agama/advanced-usages/#template-overrides).
 
 ## Where To Deploy
 
@@ -33,7 +33,7 @@ Deployment of an Agama project involves three steps.
 
 #### Pre-Requisites
 
-Here we re-use our existing **Agama-SMTP** project, So It's mendatory to deploye **Agama-SMTP** project from community project. To send email messages, ensure you have the Jans Auth Server with 
+Here we re-use our existing [**Agama-SMTP**](https://github.com/GluuFederation/agama-smtp) project, So It's mendatory to deploye **Agama-SMTP** project from community project. To send email messages, ensure you have the Jans Auth Server with 
 [SMTP service](https://docs.jans.io/head/admin/config-guide/smtp-configuration/)
 configured
 
