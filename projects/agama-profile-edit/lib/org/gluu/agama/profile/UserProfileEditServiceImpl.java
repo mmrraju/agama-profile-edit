@@ -85,17 +85,17 @@ public class UserProfileEditServiceImpl extends UserProfileEditService{
             result.put("message", "First name not provided");
             return result;
         }
-        if (StringHelper.isEmpty(profile.get(DISPLAY_NAME))) {
+        else if (StringHelper.isEmpty(profile.get(DISPLAY_NAME))) {
             result.put("valid", false);
             result.put("message", "Display name not provided");
             return result;
         }  
-        if (StringHelper.isEmpty(profile.get(LAST_NAME))) {
+        else if (StringHelper.isEmpty(profile.get(LAST_NAME))) {
             result.put("valid", false);
             result.put("message", "Last name not provided");
             return result;
         }
-        if (StringHelper.isEmpty(profile.get(MAIL))) {
+        else if (StringHelper.isEmpty(profile.get(MAIL))) {
             result.put("valid", false);
             result.put("message", "Mail not provided");
             return result;
