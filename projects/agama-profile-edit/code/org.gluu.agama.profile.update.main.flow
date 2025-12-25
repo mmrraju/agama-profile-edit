@@ -1,0 +1,61 @@
+Flow org.gluu.agama.profile.update.main
+     Basepath ""
+// Profile update flow starting
+Log "@info Profile update flow starting..."
+// Assign veriable
+uifeedback = {}
+// Trigger agama-smtp flow
+Log "@info Trigger Agama-SMTP flow"
+// Trigger smtp flow
+result = Trigger org.gluu.agama.smtp.main 
+     Override templates "hyyqd9/main.fls" "main.ftlh" 
+// Result from SMTP
+Log "@info Result from SMTP : %  " result
+// if result is true
+When result.success is true
+     // Result is True
+     Log "@info Result is true for uid : %" result.data.uid
+     // create an instance of user profile update service
+     userProfileEditService = Call org.gluu.agama.profile.service.UserProfileEditService#getInstance 
+     // Get User details
+     user = Call userProfileEditService getUserEntity result.data.uid
+     // Max Repeate x times
+     Repeat 3 times max
+          // Profile update form
+          userProfiles = RRF "profile.ftlh" user
+          // Validate user profile inputs
+          validation = Call userProfileEditService validateInputs userProfiles
+          // Validation result log
+          Log "@trace Validation result:  % , % , %" validation validation.valid validation.message
+          // If successfully validate
+          When validation.valid is true
+               // Update user profile
+               updateProfile | E = Call userProfileEditService updateProfile userProfiles result.data.uid
+               //  Profile update success or not
+               When updateProfile.empty is not true
+                    // Profile  successfully updated
+                    Log "@info Profile  successfully updated"
+                    // Show acknowledgement UI page for successful update
+                    ack = RRF "acknowledgement.ftlh" 
+                    // Finish successfully
+                    it_cxkvm = {success:true, data: { userId: user.uid}}
+                    Finish it_cxkvm
+               Otherwise
+                    // Assign error message
+                    uifeedback.errorMessage = E
+                    // show error page
+                    RRF "error.ftlh" uifeedback
+          Otherwise
+               // Assign profile validation error message
+               uifeedback.errorMessage = validation.message
+               user.errorMessage = validation.message
+     // Maximum attempt reached
+     Log "@info Maximum attempt reached"
+     // Flow finished with error 
+     it_aocbo = {success:false, error: "You've cross your max attempt limit"}
+     Finish it_aocbo
+Otherwise
+     // Assing errro message
+     uifeedback.errorMessage = "SMTP flow not found"
+     // show error message
+     RRF "error.ftlh" uifeedback
